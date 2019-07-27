@@ -1,0 +1,488 @@
+// @font-face {
+//   font-family: "Avenir Black";
+//   src: url("../fonts/Avenir-Black-webfont.woff");
+
+
+// }   
+
+
+.carousel-wrapper{
+    position: relative;
+    top:125px;
+    min-height: 90vh;
+
+    @media screen and(max-width:$breakpoint) {
+      min-height:50vh;
+    }
+  
+    img{
+      bottom: 29px;
+      position: relative;
+  
+    }
+  
+    .no-bg-image{
+      background-image: none !important;
+    }
+  
+    .carousel-caption{
+      max-width: 400px;
+      position: absolute;
+      text-align: left;
+      left: 7% !important;
+      top: 15% !important;
+      right: 0 !important;
+      padding-bottom: 30px !important;
+
+      h3{
+        font-size: 34px;
+        font-weight: bolder;
+        font-family: $avenir-black;
+        
+        
+      }
+
+      .btn-container{
+
+        button.buy{
+          @include button-home(transparent);
+        }
+        button.sell{
+          @include button-home(white)
+        }
+      }
+    }
+    .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+      right: 20% !important;
+      margin-right: -10px;
+    }
+    .carousel-control .glyphicon-chevron-left, .carousel-control .icon-previous {
+      left: 20% !important;
+      margin-right: -10px;
+    }
+
+    .carousel-indicators{
+
+      li{
+        width: 3px;
+        height: 3px;
+        margin: 3px
+      }
+    }
+
+    .glyphicon-chevron-left, .glyphicon-chevron-right{
+      font-size: 19px !important;
+    }
+
+  }
+
+  .why-choose{
+    background-color: $light-ash;
+    padding:4rem 0;
+    position: relative;
+    bottom: 30px;
+
+    .header{
+      padding-bottom: 2rem;
+    }
+
+    img{
+      width:6%;
+      padding-right: 1rem;
+      padding-bottom: 1.3rem;
+    }
+
+    h2{
+      display: inline-block;
+      font-family: $avenir-black;
+      color: $heading-blue;
+      font-weight: bolder;
+    }
+    .col-md-12{
+      color: $text-color;
+      text-align: center;
+      line-height: 2;
+    }
+  }
+
+  .weird-ellipse{
+
+    img{
+      width: 28%;
+
+      @media screen and (max-width:$breakpoint) {
+        display:none;
+      }
+    }
+    .ellipse-one{
+      position: absolute;
+      right:1364px;
+
+    }
+    .ellipse-two{
+      position: absolute;
+      left: 1364px;
+      
+    }
+  }
+
+  .payment-images{
+
+    .row{
+      width:100%;
+      text-align: center;
+    }
+    .coin-images-container{
+      padding: 5em 1.5em;
+    }
+    img{
+      width: 30%;
+    }
+
+    .rates{
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+      color: #808080;
+      padding: 7rem 4rem 3rem 4rem;
+      border-radius: 30px;
+
+      .coin-image {
+        display: inline-block;
+        img{
+          width: 100%;
+        }
+      }
+      .rate-stats{
+        display: inline-block;
+        top: -22px;
+        position: relative;
+        img{
+          width: 100%;
+        }
+        span{
+          display: block;
+          
+          span{
+            padding-left: 40px;
+            display: inline-block;
+          }
+        }
+      }
+
+      .rate-change{
+        display: inline-block;
+        position: relative;
+        bottom: 30px;
+        img{
+          width: 100%;
+          padding-left: 85px;
+          bottom: 14px;
+          position: relative;
+        }
+        span{
+          display: inline-block;
+        }
+      }
+    }
+  }
+.operate{
+  h2{
+    display: inline-block;
+    font-family: $avenir-black;
+    color: $heading-blue;
+    font-weight: bolder;
+  }
+}
+
+.owl-theme{
+
+  .owl-stage{
+    padding:20px 0px;
+  }
+}
+.testimonials{
+  
+  padding-top: 7rem;
+  
+  h2{
+    font-family: $avenir-black;
+    color: $heading-blue;
+    font-weight: bolder;
+  }
+  .item{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    padding:3em 2em;
+    min-width: 370px;
+  }
+
+  
+}
+  .faq{
+
+    padding:6em;
+    font-family: $avenir-light;
+
+    .faq-heading{
+      h2 {
+        // font-size: 1.75rem;
+        color: $heading-blue;
+        font-family: $avenir-black;
+        font-weight: bolder;
+        padding: 1.3rem;
+        margin: 0;
+      }
+      p{
+        font-weight: lighter;
+        font-size: 1.75rem;
+        margin-bottom: 1.5em;
+      }
+      h6{
+        color: #009CEA;
+        font-size: 1.5em;
+      }
+    }
+   
+    
+    .accordion{
+
+      .accordion-item{
+        margin-bottom: 0px;
+
+        a{
+          background-image: linear-gradient(to right,#009CEA,  #1E3D77);
+          padding: 1rem 2.5rem;
+        }
+        
+      }
+    }
+    .accordion a {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem 3rem 1rem 1rem;
+      color: #ffffff;
+      font-size: 1.75rem;
+      font-weight: 400;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    
+    .accordion a:hover,
+    .accordion a:hover::after {
+      cursor: pointer;
+      color: #ffffff;
+    }
+    
+    .accordion a:hover::after {
+      color: white;
+    }
+    
+    .accordion a.active {
+      color: #fff;
+      border-bottom: 1px solid #03b5d2;
+    }
+    
+    .accordion a::after {
+      font-family: 'Ionicons';
+      content: '\f218';
+      position: absolute;
+      float: right;
+      right: 1rem;
+      font-size: 2rem;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+    
+    .accordion a.active::after {
+      font-family: 'Ionicons';
+      content: '\f209';
+      color: #fff;
+      
+    }
+    
+    .accordion .content {
+      opacity: 0;
+      padding: 0.3rem 2rem;
+      max-height: 0;
+      margin-bottom: 4px;
+      overflow: hidden;
+      clear: both;
+      -webkit-transition: all 0.2s ease 0.15s;
+      -o-transition: all 0.2s ease 0.15s;
+      transition: all 0.2s ease 0.15s;
+    }
+    
+    .accordion .content p {
+      font-size: 1.75rem;
+      font-weight: 300;
+    }
+    
+    .accordion .content.active {
+      opacity: 1;
+      padding: 1rem 2rem;;
+      max-height: 100%;
+      // margin-bottom: 2px;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.36);
+      -webkit-transition: all 0.35s ease 0.15s;
+      -o-transition: all 0.35s ease 0.15s;
+      transition: all 0.35s ease 0.15s;
+    }
+  }
+  
+
+  .owl-nav{
+
+    button{
+      bottom: 50px;
+
+      span{
+        font-size: 40px;
+      }
+    }
+  }
+
+  .newsletter{
+    padding: 0 6em 3em 6em;
+
+    .newsletter-heading{
+      h2{
+        font-weight: bolder;
+        font-family: $avenir-black;
+        color: $heading-blue;
+      }
+    }
+
+    .input-subscribe{
+      border-radius: 25px;
+      padding: 1px;
+      border: 2px solid rgba(112, 112, 112, .35);
+
+      .input{
+        display: inline-block;
+        width: 76%;
+
+        input{
+          width: 100%;
+          padding: 1em 2em;
+          border: none;
+          background-color: transparent;
+          &:focus{
+            border: none;
+            outline: none;
+          }
+        }
+      }
+      .submit{
+        display: inline-block;
+        width: 22%;
+
+        button{
+          width: 100%;
+          border: 10px;
+          padding: 15px;
+          border-radius: 25px;
+          position: relative;
+          left: 8px;
+          background-color: $heading-blue;
+          color: white;
+
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    background-color: $heading-blue;
+    color: #ffffff;
+    font-family: $avenir-light;
+
+    .row{
+      padding-top: 3rem;
+    }
+
+    .footer-heading{
+      min-height: 85.1px;
+      img{
+        width: 65%;
+        padding:1.5em 0;
+      }
+      
+    }
+    .about{
+
+      .footer-heading{
+        img{
+          width: 65%;
+          padding:1.5em 0;
+        }
+        
+      }
+      .footer-content{
+        p{
+          padding-bottom: 1.5em;
+          line-height: 1.5;
+          font-size: 14px;
+          
+          &:after {
+            content: ""; 
+            display: block; 
+            width: 40%; 
+            padding-top: 20px; 
+            border-bottom: 3px solid $twitter-blue; 
+          }
+        }
+      }
+    }
+
+    .twitter{
+
+      .static-pages{
+
+        ul.page-listing{
+          list-style-type: none;
+          padding-left: 0px;
+
+          li{
+            padding-left: 0;
+            line-height: 1.5;
+
+          }
+        }
+
+        .social-links{
+
+          h4{
+            font-family: $avenir-black;
+            color: #16B0EA;
+            font-weight: bolder;
+            
+          }
+        }
+        img{
+          padding: 5px;
+        }
+      }
+    }
+    .footer-bottom{
+      background-color: #0E295A;
+      color: #ffffff;
+      text-align: center;
+      span{
+        display: inline-block;
+        text-align: center;
+        padding: 1em 0;
+      }
+    }
+  }

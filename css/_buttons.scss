@@ -1,0 +1,7 @@
+@mixin button-home ($border-color) {
+    border-radius: 25px;
+    font-family: $avenir-light;
+    font-size: 16px;
+    border: 1px solid $border-color;
+    
+}

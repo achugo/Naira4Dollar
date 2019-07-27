@@ -2,10 +2,60 @@
 $content-width: 1000px;
 $breakpoint: 799px;
 $nav-height: 100px;
+$topNav-color: #0E295A;
 $nav-background: #2F4C6F;
 $nav-font-color: #ffffff;
 $link-hover-color: #2581DC;
 
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+
+  @media screen and (max-width:$breakpoint) {
+    
+  }
+  
+  background-color: $topNav-color;
+  .top-nav{
+    position: relative; 
+    height: 37px;
+    
+    .float-right{
+
+      img{
+        width: 20%;
+        padding: 5px;
+
+        &:nth-child(2){
+          width: 30%;
+          padding: 5px;
+        }
+        &:nth-child(3){
+          width: 30%;
+          padding: 5px;
+        }
+      }
+    }
+
+    a{
+      text-decoration: none;
+      color: $nav-font-color;
+      padding-left: 5px;
+      vertical-align: middle;
+      display: inline-block;
+      padding-top: 4px;
+      font-size: 8px;
+    }
+    img{
+      padding-left: 10px;
+      vertical-align: middle;
+      padding-top: 4px;
+      width: 4%;
+
+    }
+  }
+}
 // Outer navigation wrapper
 .navigation {
     height: $nav-height;
@@ -80,26 +130,63 @@ nav {
   float: right;
   ul {
     list-style: none;
-    margin: 0;
+    margin: 40px 0px 0px 0px;
     padding: 0;
     li {
       float: left;
       position: relative;
+      margin-left: 4px;
+      margin-right: 4px;
+
+      &:nth-child(4){
+        
+        a{
+          background-color: #16A2E8;
+          z-index: 99999;
+          border-radius: 15px;
+          padding:6px 20px;
+          &:visited{
+            color: $nav-font-color;
+          }
+        }
+      }
+      &:nth-child(5){
+        
+          a{
+            background-color: $nav-font-color;
+            z-index: 99999;
+            border-radius: 15px;
+            padding:6px 20px;
+            color: #16A2E8 ;
+            &:visited{
+              color: #16A2E8 !important;
+            }
+          }
+
+        
+      }
       a,
       a:visited {
-        display: block;
-        padding: 0 20px;
-        line-height: $nav-height;
-        background: $nav-background;
+        display: inline-block;
+        font-family: $avenir-roman;
+        padding: 6px 20px;
+        line-height: 1;
+        vertical-align: middle;
         color: $nav-font-color;
         text-decoration: none;
         &:hover {
-          background: $link-hover-color;
           color: $nav-font-color;
+          position: relative;
+          text-decoration: none;
         }
         &:not(:only-child):after {
           padding-left: 4px;
           content: ' ▾';
+        }
+
+        @media screen and (max-width:$breakpoint) {
+          text-align: center;
+          color: $heading-blue !important;
         }
       } // Dropdown list
       ul li {
@@ -127,7 +214,7 @@ nav {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 24px;
+  top: 37px;
   right: 0;
   background: $nav-background;
   height: $nav-height;
@@ -141,11 +228,15 @@ nav {
   nav {
    width: 100%;
     padding: $nav-height 0 15px;
+    
     ul {
       display: none;
       li {
         float: none;
+        background-color: $mobile-nav-bg;
+        
         a {
+          color: $nav-font-color !important;
           padding: 15px;
           line-height: 20px;
         }
@@ -204,9 +295,3 @@ nav {
   }
 }
 
-// Page content 
-article {
-  max-width: $content-width;
-  margin: 0 auto;
-  padding: 10px;
-}

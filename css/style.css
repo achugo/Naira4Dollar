@@ -1,10 +1,63 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Avenir Black";
+  src: url("../fonts/Avenir-Black-webfont.woff");
+  src: url("../fonts/Avenir-Medium-webfont.woff");
+  src: url("../fonts/avenir-light-webfont.woff");
+  src: url("../fonts/Avenir-Roman-webfont.woff");
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 div {
   margin: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  background-color: #0E295A;
+}
+
+header .top-nav {
+  position: relative;
+  height: 37px;
+}
+
+header .top-nav .float-right img {
+  width: 20%;
+  padding: 5px;
+}
+
+header .top-nav .float-right img:nth-child(2) {
+  width: 30%;
+  padding: 5px;
+}
+
+header .top-nav .float-right img:nth-child(3) {
+  width: 30%;
+  padding: 5px;
+}
+
+header .top-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 4px;
+  font-size: 8px;
+}
+
+header .top-nav img {
+  padding-left: 10px;
+  vertical-align: middle;
+  padding-top: 4px;
+  width: 4%;
 }
 
 .navigation {
@@ -75,35 +128,70 @@ nav {
 
 nav ul {
   list-style: none;
-  margin: 0;
+  margin: 40px 0px 0px 0px;
   padding: 0;
 }
 
 nav ul li {
   float: left;
   position: relative;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+nav ul li:nth-child(4) a {
+  background-color: #16A2E8;
+  z-index: 99999;
+  border-radius: 15px;
+  padding: 6px 20px;
+}
+
+nav ul li:nth-child(4) a:visited {
+  color: #ffffff;
+}
+
+nav ul li:nth-child(5) a {
+  background-color: #ffffff;
+  z-index: 99999;
+  border-radius: 15px;
+  padding: 6px 20px;
+  color: #16A2E8;
+}
+
+nav ul li:nth-child(5) a:visited {
+  color: #16A2E8 !important;
 }
 
 nav ul li a,
 nav ul li a:visited {
-  display: block;
-  padding: 0 20px;
-  line-height: 100px;
-  background: #2F4C6F;
+  display: inline-block;
+  font-family: "Avenir Roman";
+  padding: 6px 20px;
+  line-height: 1;
+  vertical-align: middle;
   color: #ffffff;
   text-decoration: none;
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2581DC;
   color: #ffffff;
+  position: relative;
+  text-decoration: none;
 }
 
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
   padding-left: 4px;
   content: ' ▾';
+}
+
+@media screen and (max-width: 799px) {
+  nav ul li a,
+  nav ul li a:visited {
+    text-align: center;
+    color: #1E3D77 !important;
+  }
 }
 
 nav ul li ul li {
@@ -127,7 +215,7 @@ nav ul li ul li a {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 24px;
+  top: 37px;
   right: 0;
   background: #2F4C6F;
   height: 100px;
@@ -147,8 +235,10 @@ nav ul li ul li a {
   }
   nav ul li {
     float: none;
+    background-color: #4BB4E9;
   }
   nav ul li a {
+    color: #ffffff !important;
     padding: 15px;
     line-height: 20px;
   }
@@ -215,9 +305,460 @@ nav ul li ul li a {
           transform: rotate(-45deg);
 }
 
-article {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px;
+.carousel-wrapper {
+  position: relative;
+  top: 125px;
+  min-height: 90vh;
+}
+
+@media screen and (max-width: 799px) {
+  .carousel-wrapper {
+    min-height: 50vh;
+  }
+}
+
+.carousel-wrapper img {
+  bottom: 29px;
+  position: relative;
+}
+
+.carousel-wrapper .no-bg-image {
+  background-image: none !important;
+}
+
+.carousel-wrapper .carousel-caption {
+  max-width: 400px;
+  position: absolute;
+  text-align: left;
+  left: 7% !important;
+  top: 15% !important;
+  right: 0 !important;
+  padding-bottom: 30px !important;
+}
+
+.carousel-wrapper .carousel-caption h3 {
+  font-size: 34px;
+  font-weight: bolder;
+  font-family: "Avenir Black";
+}
+
+.carousel-wrapper .carousel-caption .btn-container button.buy {
+  border-radius: 25px;
+  font-family: "Avenir Light";
+  font-size: 16px;
+  border: 1px solid transparent;
+}
+
+.carousel-wrapper .carousel-caption .btn-container button.sell {
+  border-radius: 25px;
+  font-family: "Avenir Light";
+  font-size: 16px;
+  border: 1px solid white;
+}
+
+.carousel-wrapper .carousel-control .glyphicon-chevron-right, .carousel-wrapper .carousel-control .icon-next {
+  right: 20% !important;
+  margin-right: -10px;
+}
+
+.carousel-wrapper .carousel-control .glyphicon-chevron-left, .carousel-wrapper .carousel-control .icon-previous {
+  left: 20% !important;
+  margin-right: -10px;
+}
+
+.carousel-wrapper .carousel-indicators li {
+  width: 3px;
+  height: 3px;
+  margin: 3px;
+}
+
+.carousel-wrapper .glyphicon-chevron-left, .carousel-wrapper .glyphicon-chevron-right {
+  font-size: 19px !important;
+}
+
+.why-choose {
+  background-color: #F9F9F9;
+  padding: 4rem 0;
+  position: relative;
+  bottom: 30px;
+}
+
+.why-choose .header {
+  padding-bottom: 2rem;
+}
+
+.why-choose img {
+  width: 6%;
+  padding-right: 1rem;
+  padding-bottom: 1.3rem;
+}
+
+.why-choose h2 {
+  display: inline-block;
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+}
+
+.why-choose .col-md-12 {
+  color: #434344;
+  text-align: center;
+  line-height: 2;
+}
+
+.weird-ellipse img {
+  width: 28%;
+}
+
+@media screen and (max-width: 799px) {
+  .weird-ellipse img {
+    display: none;
+  }
+}
+
+.weird-ellipse .ellipse-one {
+  position: absolute;
+  right: 1364px;
+}
+
+.weird-ellipse .ellipse-two {
+  position: absolute;
+  left: 1364px;
+}
+
+.payment-images .row {
+  width: 100%;
+  text-align: center;
+}
+
+.payment-images .coin-images-container {
+  padding: 5em 1.5em;
+}
+
+.payment-images img {
+  width: 30%;
+}
+
+.payment-images .rates {
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+  color: #808080;
+  padding: 7rem 4rem 3rem 4rem;
+  border-radius: 30px;
+}
+
+.payment-images .rates .coin-image {
+  display: inline-block;
+}
+
+.payment-images .rates .coin-image img {
+  width: 100%;
+}
+
+.payment-images .rates .rate-stats {
+  display: inline-block;
+  top: -22px;
+  position: relative;
+}
+
+.payment-images .rates .rate-stats img {
+  width: 100%;
+}
+
+.payment-images .rates .rate-stats span {
+  display: block;
+}
+
+.payment-images .rates .rate-stats span span {
+  padding-left: 40px;
+  display: inline-block;
+}
+
+.payment-images .rates .rate-change {
+  display: inline-block;
+  position: relative;
+  bottom: 30px;
+}
+
+.payment-images .rates .rate-change img {
+  width: 100%;
+  padding-left: 85px;
+  bottom: 14px;
+  position: relative;
+}
+
+.payment-images .rates .rate-change span {
+  display: inline-block;
+}
+
+.operate h2 {
+  display: inline-block;
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+}
+
+.owl-theme .owl-stage {
+  padding: 20px 0px;
+}
+
+.testimonials {
+  padding-top: 7rem;
+}
+
+.testimonials h2 {
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+}
+
+.testimonials .item {
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+  border-radius: 18px;
+  padding: 3em 2em;
+  min-width: 370px;
+}
+
+.faq {
+  padding: 6em;
+  font-family: "Avenir Light";
+}
+
+.faq .faq-heading h2 {
+  color: #1E3D77;
+  font-family: "Avenir Black";
+  font-weight: bolder;
+  padding: 1.3rem;
+  margin: 0;
+}
+
+.faq .faq-heading p {
+  font-weight: lighter;
+  font-size: 1.75rem;
+  margin-bottom: 1.5em;
+}
+
+.faq .faq-heading h6 {
+  color: #009CEA;
+  font-size: 1.5em;
+}
+
+.faq .accordion .accordion-item {
+  margin-bottom: 0px;
+}
+
+.faq .accordion .accordion-item a {
+  background-image: -webkit-gradient(linear, left top, right top, from(#009CEA), to(#1E3D77));
+  background-image: linear-gradient(to right, #009CEA, #1E3D77);
+  padding: 1rem 2.5rem;
+}
+
+.faq .accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.faq .accordion a:hover,
+.faq .accordion a:hover::after {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.faq .accordion a:hover::after {
+  color: white;
+}
+
+.faq .accordion a.active {
+  color: #fff;
+  border-bottom: 1px solid #03b5d2;
+}
+
+.faq .accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.faq .accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #fff;
+}
+
+.faq .accordion .content {
+  opacity: 0;
+  padding: 0.3rem 2rem;
+  max-height: 0;
+  margin-bottom: 4px;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.faq .accordion .content p {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.faq .accordion .content.active {
+  opacity: 1;
+  padding: 1rem 2rem;
+  max-height: 100%;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.36);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.36);
+  -webkit-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+
+.owl-nav button {
+  bottom: 50px;
+}
+
+.owl-nav button span {
+  font-size: 40px;
+}
+
+.newsletter {
+  padding: 0 6em 3em 6em;
+}
+
+.newsletter .newsletter-heading h2 {
+  font-weight: bolder;
+  font-family: "Avenir Black";
+  color: #1E3D77;
+}
+
+.newsletter .input-subscribe {
+  border-radius: 25px;
+  padding: 1px;
+  border: 2px solid rgba(112, 112, 112, 0.35);
+}
+
+.newsletter .input-subscribe .input {
+  display: inline-block;
+  width: 76%;
+}
+
+.newsletter .input-subscribe .input input {
+  width: 100%;
+  padding: 1em 2em;
+  border: none;
+  background-color: transparent;
+}
+
+.newsletter .input-subscribe .input input:focus {
+  border: none;
+  outline: none;
+}
+
+.newsletter .input-subscribe .submit {
+  display: inline-block;
+  width: 22%;
+}
+
+.newsletter .input-subscribe .submit button {
+  width: 100%;
+  border: 10px;
+  padding: 15px;
+  border-radius: 25px;
+  position: relative;
+  left: 8px;
+  background-color: #1E3D77;
+  color: white;
+}
+
+.newsletter .input-subscribe .submit button:focus {
+  outline: none;
+}
+
+footer {
+  background-color: #1E3D77;
+  color: #ffffff;
+  font-family: "Avenir Light";
+}
+
+footer .row {
+  padding-top: 3rem;
+}
+
+footer .footer-heading {
+  min-height: 85.1px;
+}
+
+footer .footer-heading img {
+  width: 65%;
+  padding: 1.5em 0;
+}
+
+footer .about .footer-heading img {
+  width: 65%;
+  padding: 1.5em 0;
+}
+
+footer .about .footer-content p {
+  padding-bottom: 1.5em;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+footer .about .footer-content p:after {
+  content: "";
+  display: block;
+  width: 40%;
+  padding-top: 20px;
+  border-bottom: 3px solid #2AA7E6;
+}
+
+footer .twitter .static-pages ul.page-listing {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+footer .twitter .static-pages ul.page-listing li {
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+footer .twitter .static-pages .social-links h4 {
+  font-family: "Avenir Black";
+  color: #16B0EA;
+  font-weight: bolder;
+}
+
+footer .twitter .static-pages img {
+  padding: 5px;
+}
+
+footer .footer-bottom {
+  background-color: #0E295A;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer .footer-bottom span {
+  display: inline-block;
+  text-align: center;
+  padding: 1em 0;
 }
 /*# sourceMappingURL=style.css.map */
