@@ -1,0 +1,33 @@
+.how-it-works{
+    padding-top: 125px;
+    font-family: $avenir-light !important;
+
+    .how{
+        padding-top: 3em;
+        padding-bottom: 3em;
+        .header{
+            padding:4em 0em;
+            h2{
+                font-family: $avenir-black;
+                color: $heading-blue;
+                font-weight: bolder;
+
+                
+            }
+        }
+
+        .row{
+            .col-md-6{
+                h4{
+                    font-weight: bolder;
+                }
+                p{
+                    line-height: 2;
+                }
+            }
+        }
+       
+    }
+
+    
+}

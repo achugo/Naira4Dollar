@@ -2,18 +2,112 @@
 @font-face {
   font-family: "Avenir Black";
   src: url("../fonts/Avenir-Black-webfont.woff");
-  src: url("../fonts/Avenir-Medium-webfont.woff");
+}
+
+@font-face {
+  font-family: "Avenir Light";
   src: url("../fonts/avenir-light-webfont.woff");
+}
+
+@font-face {
+  font-family: "Avenir Medium";
+  src: url("../fonts/Avenir-Medium-webfont.woff");
+}
+
+@font-face {
+  font-family: "Avenir Roman";
   src: url("../fonts/Avenir-Roman-webfont.woff");
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: "Avenir Light";
 }
 
 div {
   margin: 0;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hide-desktop {
+    display: block;
+  }
+}
+
+.hide-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .hide-mobile {
+    display: block;
+  }
+}
+
+.padding-lr0 {
+  position: relative;
+}
+
+@media screen and (min-width: 767px) {
+  .padding-lr0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+.padding-left0_ {
+  position: relative;
+}
+
+@media screen and (min-width: 767px) {
+  .padding-left0_ {
+    padding-left: 0px !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .padding-right0_ {
+    padding-right: 0px !important;
+  }
+}
+
+.row_ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col_ {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 18%;
+          flex: 1 0 18%;
+  /* The important bit. This percentage decides your columns. 
+   The percent can be px. It just represents your minimum starting width.
+    */
+  margin: 5px;
+  background: tomato;
+  height: auto;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.owl-carousel .owl-item.big {
+  background: #ac0000 !important;
 }
 
 header {
@@ -39,8 +133,8 @@ header .top-nav .float-right img:nth-child(2) {
 }
 
 header .top-nav .float-right img:nth-child(3) {
-  width: 30%;
-  padding: 5px;
+  width: 26%;
+  padding: 5px 0 5px 5px;
 }
 
 header .top-nav a {
@@ -132,11 +226,23 @@ nav ul {
   padding: 0;
 }
 
+@media screen and (max-width: 760px) {
+  nav ul {
+    background-color: white;
+  }
+}
+
 nav ul li {
   float: left;
   position: relative;
   margin-left: 4px;
   margin-right: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul li:nth-child(4) {
+    text-align: center;
+  }
 }
 
 nav ul li:nth-child(4) a {
@@ -150,12 +256,38 @@ nav ul li:nth-child(4) a:visited {
   color: #ffffff;
 }
 
+@media screen and (max-width: 799px) {
+  nav ul li:nth-child(4) a {
+    text-align: center;
+    width: 90%;
+    margin-left: 2.5%;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav ul li:nth-child(5) {
+    text-align: center;
+  }
+}
+
 nav ul li:nth-child(5) a {
   background-color: #ffffff;
   z-index: 99999;
   border-radius: 15px;
   padding: 6px 20px;
   color: #16A2E8;
+}
+
+@media screen and (max-width: 799px) {
+  nav ul li:nth-child(5) a {
+    background-color: #1E3D77;
+    color: white !important;
+    width: 90%;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-bottom: 8px;
+  }
 }
 
 nav ul li:nth-child(5) a:visited {
@@ -184,6 +316,11 @@ nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
   padding-left: 4px;
   content: ' ▾';
+}
+
+nav ul li a:active,
+nav ul li a:visited:active {
+  border-bottom: 3px solid white;
 }
 
 @media screen and (max-width: 799px) {
@@ -228,14 +365,19 @@ nav ul li ul li a {
   }
   nav {
     width: 100%;
-    padding: 100px 0 15px;
+    padding: 100px 0 0px 0;
+    max-height: 300px;
   }
   nav ul {
     display: none;
+    position: relative;
+    bottom: 70px;
+    padding-bottom: 25px;
+    -webkit-box-shadow: 0 3px 11px rgba(0, 0, 0, 0.11);
+            box-shadow: 0 3px 11px rgba(0, 0, 0, 0.11);
   }
   nav ul li {
     float: none;
-    background-color: #4BB4E9;
   }
   nav ul li a {
     color: #ffffff !important;
@@ -275,8 +417,6 @@ nav ul li ul li a {
   position: absolute;
   display: block;
   content: '';
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
 }
 
 #nav-toggle span:before {
@@ -307,13 +447,20 @@ nav ul li ul li a {
 
 .carousel-wrapper {
   position: relative;
-  top: 125px;
+  padding-top: 125px;
   min-height: 90vh;
+}
+
+@media screen and (max-width: 786px) {
+  .carousel-wrapper .carousel-inner .item img {
+    height: 40vh;
+  }
 }
 
 @media screen and (max-width: 799px) {
   .carousel-wrapper {
     min-height: 50vh;
+    padding-top: 150px;
   }
 }
 
@@ -330,16 +477,30 @@ nav ul li ul li a {
   max-width: 400px;
   position: absolute;
   text-align: left;
-  left: 7% !important;
+  left: 9.2% !important;
   top: 15% !important;
   right: 0 !important;
   padding-bottom: 30px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-wrapper .carousel-caption {
+    top: 8%;
+    left: 5%;
+  }
 }
 
 .carousel-wrapper .carousel-caption h3 {
   font-size: 34px;
   font-weight: bolder;
   font-family: "Avenir Black";
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-wrapper .carousel-caption h3 {
+    font-size: 20px;
+    padding-right: 25px;
+  }
 }
 
 .carousel-wrapper .carousel-caption .btn-container button.buy {
@@ -404,6 +565,7 @@ nav ul li ul li a {
   color: #434344;
   text-align: center;
   line-height: 2;
+  font-family: "Avenir Light";
 }
 
 .weird-ellipse img {
@@ -436,14 +598,31 @@ nav ul li ul li a {
 }
 
 .payment-images img {
-  width: 30%;
+  width: 48%;
+}
+
+@media screen and (max-width: 600px) {
+  .payment-images img {
+    width: 100%;
+  }
+}
+
+.payment-images .paypal-adjust {
+  position: relative;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .payment-images .paypal-adjust {
+    bottom: 8px;
+  }
 }
 
 .payment-images .rates {
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
           box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
   color: #808080;
-  padding: 7rem 4rem 3rem 4rem;
+  padding: 2rem 4rem 0rem 4rem;
   border-radius: 30px;
 }
 
@@ -467,6 +646,10 @@ nav ul li ul li a {
 
 .payment-images .rates .rate-stats span {
   display: block;
+  font-family: "Comfortaa", cursive;
+  font-weight: bolder;
+  font-size: 10px;
+  line-height: 2;
 }
 
 .payment-images .rates .rate-stats span span {
@@ -489,6 +672,9 @@ nav ul li ul li a {
 
 .payment-images .rates .rate-change span {
   display: inline-block;
+  font-weight: bolder;
+  font-size: 18px;
+  color: red;
 }
 
 .operate h2 {
@@ -496,6 +682,39 @@ nav ul li ul li a {
   font-family: "Avenir Black";
   color: #1E3D77;
   font-weight: bolder;
+  padding: 1em;
+}
+
+.operate iframe, .operate video {
+  border-radius: 25px;
+}
+
+.operate .operate-caption {
+  font-family: "Avenir Light";
+  color: #434344;
+  line-height: 2;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.operate .learn-more {
+  margin-top: 2em;
+  position: relative;
+}
+
+.operate .learn-more a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2AA7E6;
+  padding: 0.6em 1.5em;
+  border-radius: 15px;
+  font-family: "Avenir Medium";
+}
+
+.operate .learn-more a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
 }
 
 .owl-theme .owl-stage {
@@ -520,9 +739,19 @@ nav ul li ul li a {
   min-width: 370px;
 }
 
+.testimonials .big {
+  background-color: yellow;
+}
+
 .faq {
   padding: 6em;
   font-family: "Avenir Light";
+}
+
+@media screen and (max-width: 600px) {
+  .faq {
+    padding: 6em 0;
+  }
 }
 
 .faq .faq-heading h2 {
@@ -537,6 +766,8 @@ nav ul li ul li a {
   font-weight: lighter;
   font-size: 1.75rem;
   margin-bottom: 1.5em;
+  font-family: "Avenir Light";
+  color: #434344;
 }
 
 .faq .faq-heading h6 {
@@ -552,6 +783,12 @@ nav ul li ul li a {
   background-image: -webkit-gradient(linear, left top, right top, from(#009CEA), to(#1E3D77));
   background-image: linear-gradient(to right, #009CEA, #1E3D77);
   padding: 1rem 2.5rem;
+  font-family: "Avenir Light";
+}
+
+.faq .accordion .accordion-item a span {
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 .faq .accordion a {
@@ -619,6 +856,9 @@ nav ul li ul li a {
 .faq .accordion .content p {
   font-size: 1.75rem;
   font-weight: 300;
+  font-weight: lighter;
+  font-family: "Avenir Light";
+  color: #434344;
 }
 
 .faq .accordion .content.active {
@@ -643,10 +883,21 @@ nav ul li ul li a {
   padding: 0 6em 3em 6em;
 }
 
+@media screen and (max-width: 768px) {
+  .newsletter {
+    padding: 0 0.5em 2em 0.5em;
+  }
+}
+
 .newsletter .newsletter-heading h2 {
   font-weight: bolder;
   font-family: "Avenir Black";
   color: #1E3D77;
+}
+
+.newsletter .newsletter-heading p {
+  font-family: "Avenir Light";
+  color: #434344;
 }
 
 .newsletter .input-subscribe {
@@ -660,10 +911,17 @@ nav ul li ul li a {
   width: 76%;
 }
 
+@media screen and (max-width: 600px) {
+  .newsletter .input-subscribe .input {
+    width: 60%;
+  }
+}
+
 .newsletter .input-subscribe .input input {
   width: 100%;
   padding: 1em 2em;
   border: none;
+  font-family: "Avenir Light";
   background-color: transparent;
 }
 
@@ -677,6 +935,12 @@ nav ul li ul li a {
   width: 22%;
 }
 
+@media screen and (max-width: 600px) {
+  .newsletter .input-subscribe .submit {
+    width: 35%;
+  }
+}
+
 .newsletter .input-subscribe .submit button {
   width: 100%;
   border: 10px;
@@ -684,6 +948,7 @@ nav ul li ul li a {
   border-radius: 25px;
   position: relative;
   left: 8px;
+  font-family: "Avenir Light";
   background-color: #1E3D77;
   color: white;
 }
@@ -760,5 +1025,530 @@ footer .footer-bottom span {
   display: inline-block;
   text-align: center;
   padding: 1em 0;
+}
+
+.about-us {
+  padding-top: 125px;
+  font-family: "Avenir Light" !important;
+}
+
+.about-us .about-section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.about-us .about-section .header {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.about-us .about-section .header h2 {
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+}
+
+.about-us .about-section .row .col-md-6 p {
+  line-height: 2;
+  padding-bottom: 2em;
+  font-size: 16px;
+}
+
+.awesome-features {
+  font-family: "Avenir Light";
+}
+
+.awesome-features h2 {
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+}
+
+.awesome-features h2:after {
+  content: "";
+  border-bottom: 4px solid #2AA7E6;
+  width: 8%;
+  display: block;
+  padding-top: 0.5em;
+  margin: 0px auto;
+}
+
+.awesome-features p {
+  padding: 0.2em 0em 3em 0em;
+  font-family: "Avenir Light";
+  font-size: 20px;
+}
+
+.awesome-features .row:nth-child(2) .col-md-3 img {
+  min-height: 93px;
+}
+
+@media screen and (max-width: 600px) {
+  .awesome-features .row:nth-child(2) .col-md-3 img {
+    width: 60%;
+    min-height: 44px;
+  }
+}
+
+.awesome-features .caption {
+  font-family: "Avenir Light";
+  padding: 2em 0;
+}
+
+.awesome-features .colleague-images h4 {
+  font-weight: lighter;
+  font-family: "Avenir Light";
+  padding: 2em 0em;
+}
+
+.awesome-features .colleague-images h4:after {
+  content: "";
+  width: 5%;
+  border-bottom: 4px solid #2AA7E6;
+  display: block;
+  margin: 0px auto;
+  padding-top: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+  .awesome-features .colleague-images .col-6:nth-child(2n+1) {
+    padding-left: 0px !important;
+  }
+  .awesome-features .colleague-images .col-6:nth-child(2n) {
+    padding-right: 0px !important;
+  }
+}
+
+.awesome-features .colleague-images img {
+  padding: 3px;
+}
+
+@media screen and (min-width: 799px) {
+  .awesome-features .colleague-images img {
+    height: 307px;
+  }
+}
+
+.awesome-features .coin-images-container {
+  padding: 4em 8em;
+}
+
+@media screen {
+  .awesome-features .coin-images-container {
+    padding: 4em 1em;
+  }
+}
+
+.awesome-features .coin-images-container .paypal-adjust {
+  position: relative;
+  bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .awesome-features .coin-images-container .paypal-adjust {
+    bottom: 8px;
+  }
+}
+
+.awesome-features .coin-images-container .col-md-3 {
+  text-align: center;
+}
+
+.awesome-features .coin-images-container .col-md-3 img {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .awesome-features .coin-images-container .col-md-3 img {
+    width: 100%;
+  }
+}
+
+.how-it-works {
+  padding-top: 125px;
+  font-family: "Avenir Light" !important;
+}
+
+.how-it-works .how {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.how-it-works .how .header {
+  padding: 4em 0em;
+}
+
+.how-it-works .how .header h2 {
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+}
+
+.how-it-works .how .row .col-md-6 h4 {
+  font-weight: bolder;
+}
+
+.how-it-works .how .row .col-md-6 p {
+  line-height: 2;
+}
+
+.register {
+  padding-top: 125px;
+  font-family: "Avenir Light" !important;
+}
+
+.register .header {
+  background-color: #F5F5F5;
+  padding: 2em 0;
+}
+
+.register .header h2 {
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.register .register-form {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.register .register-form .row .col-md-4 {
+  background-color: #F5F5F5;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
+  border-radius: 34px;
+}
+
+@media screen and (max-width: 600px) {
+  .register .register-form .row .col-md-4 {
+    margin: 1.8em;
+  }
+}
+
+.register .register-form .row .col-md-4 form {
+  padding: 2em;
+}
+
+.register .register-form .row .col-md-4 form .heading h3 {
+  font-family: "Avenir Black";
+  font-weight: bolder;
+  color: #1E3D77;
+}
+
+.register .register-form .row .col-md-4 form input {
+  border-radius: 25px;
+  padding: 1.5em;
+}
+
+.register .register-form .row .col-md-4 form label.form-check-label {
+  padding-left: 20px;
+  font-family: "Avenir Light";
+}
+
+.register .register-form .row .col-md-4 form button {
+  margin-top: 10px;
+  width: 100%;
+  padding: .75em;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#009CEA), to(#1E3D77));
+  background-image: linear-gradient(to right, #009CEA, #1E3D77);
+}
+
+.login {
+  padding-top: 125px;
+  font-family: "Avenir Light" !important;
+}
+
+.login .header {
+  background-color: #F5F5F5;
+  padding: 2em 0;
+}
+
+.login .header h2 {
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.login .login-form {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.login .login-form .row .col-md-4 {
+  background-color: #F5F5F5;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
+  border-radius: 34px;
+}
+
+@media screen and (max-width: 600px) {
+  .login .login-form .row .col-md-4 {
+    margin: 1.8em;
+  }
+}
+
+.login .login-form .row .col-md-4 form {
+  padding: 2em;
+}
+
+.login .login-form .row .col-md-4 form .heading h3 {
+  font-family: "Avenir Black";
+  font-weight: bolder;
+  color: #1E3D77;
+}
+
+.login .login-form .row .col-md-4 form input {
+  border-radius: 25px;
+  padding: 1.5em;
+}
+
+.login .login-form .row .col-md-4 form label.form-check-label {
+  padding-left: 20px;
+  font-family: "Avenir Light";
+}
+
+.login .login-form .row .col-md-4 form button {
+  margin-top: 10px;
+  width: 100%;
+  padding: .75em;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#009CEA), to(#1E3D77));
+  background-image: linear-gradient(to right, #009CEA, #1E3D77);
+}
+
+.dashboard-content {
+  padding-top: 150px;
+  background-color: white;
+  height: 40vh;
+  -webkit-box-shadow: 0 2px 22px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 2px 22px rgba(0, 0, 0, 0.13);
+}
+
+.dashboard-content .row {
+  padding: 0 3em 2em 0;
+  position: relative;
+  bottom: 48px;
+}
+
+.dashboard-content .row h3 {
+  color: #2AA7E6;
+  font-weight: bolder;
+  font-family: "Avenir Black";
+}
+
+.dashboard-rate {
+  position: relative;
+  bottom: 170px;
+  background-color: #ffff;
+}
+
+.click-here {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+}
+
+.click-here button {
+  background-color: #2AA7E6;
+  border-radius: 15px;
+  padding: 0.2em 1.5em;
+  color: #fff;
+}
+
+.click-here button:hover {
+  color: #fff;
+}
+
+header.dashboard {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.11);
+}
+
+header.dashboard .navigation {
+  height: 100px;
+  background: #fff !important;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 799px) {
+  header.dashboard .navigation {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+header.dashboard nav {
+  float: right;
+}
+
+header.dashboard nav ul {
+  list-style: none;
+  margin: 40px 0px 0px 0px;
+  padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+  header.dashboard nav ul {
+    background-color: white;
+  }
+}
+
+header.dashboard nav ul li {
+  float: left;
+  position: relative;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  header.dashboard nav ul li:nth-child(4) {
+    text-align: center;
+  }
+}
+
+header.dashboard nav ul li:nth-child(4) a {
+  background-color: #16A2E8;
+  z-index: 99999;
+  border-radius: 15px;
+  padding: 6px 20px;
+  color: #314D81 !important;
+}
+
+header.dashboard nav ul li:nth-child(4) a:visited {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 799px) {
+  header.dashboard nav ul li:nth-child(4) a {
+    text-align: center;
+    width: 90%;
+    margin-left: 2.5%;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header.dashboard nav ul li:nth-child(5) {
+    text-align: center;
+  }
+}
+
+header.dashboard nav ul li:nth-child(5) a {
+  background-color: #ffffff;
+  z-index: 99999;
+  border-radius: 15px;
+  padding: 6px 20px;
+  color: #16A2E8;
+}
+
+@media screen and (max-width: 799px) {
+  header.dashboard nav ul li:nth-child(5) a {
+    background-color: #1E3D77;
+    color: white !important;
+    width: 90%;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-bottom: 8px;
+  }
+}
+
+header.dashboard nav ul li:nth-child(5) a:visited {
+  color: #16A2E8 !important;
+}
+
+header.dashboard nav ul li a,
+header.dashboard nav ul li a:visited {
+  display: inline-block;
+  font-family: "Avenir Roman";
+  padding: 6px 20px;
+  line-height: 1;
+  vertical-align: middle;
+  color: #314D81 !important;
+  text-decoration: none;
+}
+
+header.dashboard nav ul li a:hover,
+header.dashboard nav ul li a:visited:hover {
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+}
+
+header.dashboard nav ul li a:not(:only-child):after,
+header.dashboard nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+
+header.dashboard nav ul li a:active,
+header.dashboard nav ul li a:visited:active {
+  border-bottom: 3px solid white;
+}
+
+@media screen and (max-width: 799px) {
+  header.dashboard nav ul li a,
+  header.dashboard nav ul li a:visited {
+    text-align: center;
+    color: #1E3D77 !important;
+  }
+}
+
+header.dashboard nav ul li ul li {
+  min-width: 190px;
+}
+
+header.dashboard nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.contact-us {
+  padding-top: 125px;
+  font-family: "Avenir Light" !important;
+}
+
+.contact-us .contact-section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.contact-us .contact-section .header h2 {
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+}
+
+.contact-us .contact-section .row form .form-group input {
+  border-radius: 20px;
+  padding: 1.4em;
+}
+
+.contact-us .contact-section .row form .form-group textarea {
+  width: 100%;
+  border-radius: 35px;
+}
+
+.contact-us .contact-section .row form .form-inline {
+  width: 49.5%;
+  display: inline-block;
+  margin: 0.7em 0;
+}
+
+.contact-us .contact-section .row form .form-inline input {
+  width: 100%;
+  border-radius: 20px;
+  padding: 1.4em;
 }
 /*# sourceMappingURL=style.css.map */

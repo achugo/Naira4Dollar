@@ -1,0 +1,45 @@
+.contact-us{
+    padding-top: 125px;
+    font-family: $avenir-light !important;
+
+    .contact-section{
+        padding-top: 3em;
+        padding-bottom: 3em;
+        .header{
+            h2{
+                font-family: $avenir-black;
+                color: $heading-blue;
+                font-weight: bolder;
+               
+            }
+        }
+
+        .row{
+            form{
+                .form-group{
+                    input{
+                        border-radius: 20px;
+                        padding: 1.4em
+                    }
+                    textarea{
+                        width: 100%;
+                        border-radius: 35px;
+                    }
+                }
+                .form-inline{
+                    width: 49.5%;
+                    display: inline-block;
+                    margin:0.7em 0;
+
+                    input{
+                        width: 100%;
+                        border-radius: 20px;
+                        padding: 1.4em;
+                    }
+                }
+               
+            }
+        }
+       
+    }    
+}

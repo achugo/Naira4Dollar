@@ -1,0 +1,41 @@
+.dashboard-content{
+    padding-top: 150px;
+    background-color: white;
+    height: 40vh;
+    box-shadow: 0 2px 22px rgba(0, 0, 0, 0.13);
+
+    .row{
+        padding: 0 3em 2em 0;
+        position: relative;
+        bottom: 48px;
+        h3{
+            color: $twitter-blue;
+            font-weight: bolder;
+            font-family: $avenir-black;
+        }
+    }
+}
+
+.dashboard-rate{
+    position: relative;
+    bottom: 170px;
+    background-color: #ffff;
+
+}
+.click-here{
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+
+    button{
+        background-color: #2AA7E6;
+        border-radius: 15px;
+        padding: 0.2em 1.5em;
+        color: #fff;
+        
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+

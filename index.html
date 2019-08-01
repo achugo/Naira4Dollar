@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- project stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap Scripts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -50,7 +51,7 @@
                             <img src="./images/call.png" alt="call image" /><a href="tel:+2347004007000">07004007000</a>
                             <img src="./images/whatsapp.png" alt="whatsapp image" /><a href="">Send Message</a>
                         </div>
-                        <div class="col-lg-6 col-4">
+                        <div class="col-lg-6 col-4 padding-lr0">
                             <span class="float-right">
                                 <img src="./images/facebook.png" alt="">
                                 <img src="./images/instagram.png" alt="">
@@ -173,7 +174,7 @@
         <div class="container payment-images">
           <div class="row coin-images-container">
             <div class="col-md-3 col-3 text-center">
-              <img src="./images/paypal.png" alt="" class="img-fluid">
+              <img src="./images/paypal.png" alt="" class="img-fluid paypal-adjust">
             </div>
             <div class="col-md-3 col-3 text-center">
               <img src="./images/bitcoin.png" alt="" class="img-fluid">
@@ -196,7 +197,7 @@
                         <span>Sell <span>$9090</span></span>
                       </div>
                       <div class="rate-change">
-                        <span>0.024</span>
+                        <span>0.024%</span>
                         <img src="./images/arrow-down.png" alt="">
                       </div>
                     </div>
@@ -210,7 +211,7 @@
                           <span>Sell <span>$9090</span></span>
                         </div>
                         <div class="rate-change">
-                          <span>0.024</span>
+                          <span>0.024%</span>
                           <img src="./images/arrow-down.png" alt="">
                         </div>
                       </div>
@@ -224,7 +225,7 @@
                           <span>Sell <span>$9090</span></span>
                         </div>
                         <div class="rate-change">
-                          <span>0.024</span>
+                          <span>0.024%</span>
                           <img src="./images/arrow-down.png" alt="">
                         </div>
                       </div>
@@ -238,7 +239,7 @@
                           <span>Sell <span>$9090</span></span>
                         </div>
                         <div class="rate-change">
-                          <span>0.024</span>
+                          <span>0.024%</span>
                           <img src="./images/arrow-down.png" alt="">
                         </div>
                       </div>
@@ -252,7 +253,7 @@
                           <span>Sell <span>$9090</span></span>
                         </div>
                         <div class="rate-change">
-                          <span>0.024</span>
+                          <span>0.024%</span>
                           <img src="./images/arrow-down.png" alt="">
                         </div>
                       </div>                   
@@ -271,17 +272,19 @@
             <div class="row">
                 
                 <div class="col-md-4">
-                  <video src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+                    <iframe width="100%" height="250" frameborder="0" src="https://www.youtube.com/embed/k0AQb5_U7mo"></iframe>
                 </div>
                 <div class="col-md-4">
-                  <video src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+                    <iframe width="100%" height="250" frameborder="0" src="https://www.youtube.com/embed/k0AQb5_U7mo"></iframe>
+                  <!-- <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video> -->
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 operate-caption">
                     Bytecoin(BCN) Deposit Issue Announcement. Binance Has Distributed April GAS (NEO)
                     NANO Competition - 15,000 NANO To Giveaway Sequoia Legal Case Update Binance is Now Available in Turkish IOST Competition Has Now Concluded
                     
                 </div>
-              </div> 
+                <div class="col-md-12 learn-more text-center"><a>Learn more</a></div>
+            </div> 
         </div>
 
         <div class="container testimonials">
@@ -359,9 +362,10 @@
           
               <div class="accordion">
                 <div class="accordion-item">
-                  <a>Why is the moon sometimes out during the day?</a>
+                  <a>Q. How safe is e-currencies and what can I do with them??</a>
                   <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    <p>A. No one can guaranttee the safety of e-currencies, they can disappear anytime. Just buy/keep as much as you need only. E-currencies are used online as means of exchange for goods and services over the internet. Before you can use e-currency, the merchant/beneficiary must accept it. 
+                        E-currencies are mostly used for Forex, Gambling/games, Investments, ad bookings, hosting/Domain names, etc. .</p>
                   </div>
                 </div>
                 <div class="accordion-item">
@@ -468,7 +472,7 @@
         $(".owl-carousel").owlCarousel();
       });
     </script> -->
-
+  
     <script>
       const items = document.querySelectorAll(".accordion a");
 
@@ -481,29 +485,82 @@
     
     <!-- <script src="./js/faq.js"></script> -->
     <script src="./js/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
     <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script>
-      $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            600:{
-                items:1,
-                nav:false
-            },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false
-            }
-        }
-    })
+    //   $('.owl-carousel').owlCarousel({
+    //     loop:true,
+    //     margin:10,
+    //     responsiveClass:true,
+    //     responsive:{
+    //         0:{
+    //             items:1,
+    //             nav:true
+    //         },
+    //         600:{
+    //             items:1,
+    //             nav:false
+    //         },
+    //         1000:{
+    //             items:3,
+    //             nav:true,
+    //             loop:false
+    //         }
+    //     }
+    // })
+
+    $(function(){
+
+        $('.loop').on('initialize.owl.carousel translate.owl.carousel', function(e){
+              idx = e.item.index;
+              console.log(e);
+              alert('it works');
+              // $('.owl-item.big').removeClass('big');
+              // $('.owl-item').eq(idx).addClass('big');
+              
+          });
+
+
+          $('.owl-carousel').owlCarousel({
+              loop:true,
+              margin:10,
+              responsiveClass:true,
+              autoplay:true,
+              responsive:{
+                  0:{
+                      items:1,
+                      nav:true
+                  },
+                  600:{
+                      items:1,
+                      nav:false
+                  },
+                  1000:{
+                      items:3,
+                      nav:true,
+                      loop:false
+                  }
+              }
+          })
+      }); 
     </script>
+      <!-- <script>
+          var owlBtns = document.querySelectorAll('.testimonials .owl-nav button span');
+          var activeOnes = [];
+          console.log(owlBtns)
+          Array.from(owlBtns).forEach(element => {
+            element.addEventListener('click', () => {
+              var inactiveOnes = document.querySelectorAll('.testimonials .owl-carousel .owl-stage .item')
+              inactiveOnes[0].classList.remove('middle-testimonial');
+              activeOnes = document.querySelectorAll('.testimonials .owl-carousel .owl-stage .active')
+              activeOnes[1].classList.add('middle-testimonial');
+            })
+           
+            
+          });
+          
+    
+      </script> -->
 </body>
 </html>

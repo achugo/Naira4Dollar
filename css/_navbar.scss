@@ -32,8 +32,8 @@ header{
           padding: 5px;
         }
         &:nth-child(3){
-          width: 30%;
-          padding: 5px;
+          width: 26%;
+          padding: 5px 0 5px 5px;
         }
       }
     }
@@ -128,10 +128,15 @@ header{
 // Navigation 
 nav {
   float: right;
+  
   ul {
     list-style: none;
     margin: 40px 0px 0px 0px;
     padding: 0;
+
+    @media screen and (max-width:760px) {
+      background-color:white;
+    }
     li {
       float: left;
       position: relative;
@@ -139,7 +144,9 @@ nav {
       margin-right: 4px;
 
       &:nth-child(4){
-        
+        @media screen and (min-width:768px){
+          text-align:center;
+        }
         a{
           background-color: #16A2E8;
           z-index: 99999;
@@ -148,19 +155,38 @@ nav {
           &:visited{
             color: $nav-font-color;
           }
+          @media screen and (max-width:$breakpoint){
+            text-align:center;
+            width: 90%;
+            margin-left: 2.5%;
+            margin-bottom: 8px;
+          }
         }
       }
       &:nth-child(5){
-        
+          @media screen and (min-width:768px){
+            text-align:center;
+          }
           a{
             background-color: $nav-font-color;
             z-index: 99999;
             border-radius: 15px;
             padding:6px 20px;
             color: #16A2E8 ;
+
+            @media screen and (max-width:$breakpoint) {
+              background-color:$heading-blue;
+              color: white !important;
+              width: 90%;
+              text-align: center;
+              margin-left: 2.5%;
+              margin-bottom: 8px;
+            }
             &:visited{
               color: #16A2E8 !important;
+             
             }
+            
           }
 
         
@@ -182,6 +208,9 @@ nav {
         &:not(:only-child):after {
           padding-left: 4px;
           content: ' ▾';
+        }
+        &:active{
+          border-bottom: 3px solid white;
         }
 
         @media screen and (max-width:$breakpoint) {
@@ -227,13 +256,20 @@ nav {
   }
   nav {
    width: 100%;
-    padding: $nav-height 0 15px;
+    padding: $nav-height 0 0px 0;
+    max-height: 300px;
+    
+    
     
     ul {
       display: none;
+      position: relative;
+      bottom: 70px;
+      padding-bottom: 25px;
+      box-shadow: 0 3px 11px rgba(0, 0, 0, 0.11);
       li {
         float: none;
-        background-color: $mobile-nav-bg;
+        // background-color: $mobile-nav-bg;
         
         a {
           color: $nav-font-color !important;
@@ -272,7 +308,7 @@ nav {
     position: absolute;
     display: block;
     content: '';
-    transition: all 300ms ease-in-out;
+    // transition: all 300ms ease-in-out;
   }
   span:before {
     top: -10px;

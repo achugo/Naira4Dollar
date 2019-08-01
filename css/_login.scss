@@ -1,0 +1,65 @@
+.login{
+    padding-top: 125px;
+    font-family: $avenir-light !important;
+    .header{
+        background-color: #F5F5F5;
+        padding: 2em 0;
+        h2{
+            font-family: $avenir-black;
+            color: $heading-blue;
+            font-weight: bolder;
+            text-align: center
+        }
+    }
+
+    .login-form{
+        padding-top: 3em;
+        padding-bottom: 3em;
+
+        .row{
+            .col-md-4{
+                background-color: $form-color;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
+                border-radius: 34px;
+
+                @media screen and (max-width:600px) {
+                    margin:1.8em;
+                }
+            
+
+                form{
+                    padding: 2em;
+                    .heading{
+                        h3{
+                            font-family: $avenir-black;
+                            font-weight: bolder;
+                            color: $heading-blue;
+                        }
+                    }
+                    input{
+                        border-radius: 25px;
+                        padding: 1.5em;
+                        
+                    }
+                    label.form-check-label{
+                        padding-left: 20px;
+                        font-family: $avenir-light;
+
+                    }
+                    button{
+                        margin-top: 10px;
+                        width: 100%;
+                        padding: .75em;
+                        border-radius: 25px;
+                        background-image: linear-gradient(to right,#009CEA,  #1E3D77);
+                    }
+                }
+            }
+        }
+       
+        
+       
+    }
+
+    
+}

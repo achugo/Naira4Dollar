@@ -8,11 +8,23 @@
 
 .carousel-wrapper{
     position: relative;
-    top:125px;
+    padding-top:125px;
     min-height: 90vh;
 
-    @media screen and(max-width:$breakpoint) {
+    .carousel-inner{
+
+      .item{
+        img{
+          @media screen and (max-width:786px) {
+            height:40vh;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width:$breakpoint) {
       min-height:50vh;
+      padding-top: 150px;
     }
   
     img{
@@ -29,16 +41,24 @@
       max-width: 400px;
       position: absolute;
       text-align: left;
-      left: 7% !important;
+      left: 9.2% !important;
       top: 15% !important;
       right: 0 !important;
       padding-bottom: 30px !important;
+
+      @media screen and (max-width:600px) {
+        top:8%;
+        left:5%;
+      }
 
       h3{
         font-size: 34px;
         font-weight: bolder;
         font-family: $avenir-black;
-        
+        @media screen and (max-width:600px) {
+          font-size:20px;
+          padding-right: 25px;
+        }
         
       }
 
@@ -102,6 +122,7 @@
       color: $text-color;
       text-align: center;
       line-height: 2;
+      font-family: $avenir-light
     }
   }
 
@@ -136,13 +157,26 @@
       padding: 5em 1.5em;
     }
     img{
-      width: 30%;
+      width: 48%;
+
+      @media screen and (max-width:600px) {
+        width:100%;
+      }
+
+    }
+    .paypal-adjust{
+      position: relative;
+      bottom: 20px;
+      
+      @media screen and (max-width:600px) {
+        bottom: 8px;
+      }
     }
 
     .rates{
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
       color: #808080;
-      padding: 7rem 4rem 3rem 4rem;
+      padding: 2rem 4rem 0rem 4rem;
       border-radius: 30px;
 
       .coin-image {
@@ -160,6 +194,10 @@
         }
         span{
           display: block;
+          font-family: $comfortaa;
+          font-weight: bolder;
+          font-size: 10px;
+          line-height: 2;
           
           span{
             padding-left: 40px;
@@ -180,6 +218,9 @@
         }
         span{
           display: inline-block;
+          font-weight: bolder;
+          font-size: 18px;
+          color: red
         }
       }
     }
@@ -190,6 +231,38 @@
     font-family: $avenir-black;
     color: $heading-blue;
     font-weight: bolder;
+    padding: 1em;
+  }
+
+  iframe, video{
+    border-radius: 25px;
+    // height: 250px;
+  }
+  .operate-caption{
+    font-family: $avenir-light;
+    color: #434344;
+    line-height: 2;
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  .learn-more{
+    margin-top: 2em;
+    position: relative;
+
+    a{
+      text-decoration: none;
+      color: #fff;
+      background-color: $twitter-blue;
+      padding: 0.6em 1.5em;
+      border-radius: 15px;
+      font-family: $avenir-medium;
+      
+      &:hover{
+        text-decoration: none;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -215,12 +288,34 @@
     min-width: 370px;
   }
 
+  // .owl-carousel{
+  //   .owl-stage{
+  //     .active{
+
+  //       &:nth-child(2){
+  //         background-color: pink !important;
+  //       }
+  //     }
+  //   }
+  // }
+  // .middle-testimonial{
+  //   background-color: pink;
+
+  // }
+  .big{
+    background-color: yellow;
+  }
+
   
 }
   .faq{
 
     padding:6em;
     font-family: $avenir-light;
+
+    @media screen and (max-width:600px) {
+      padding:6em 0;
+    }
 
     .faq-heading{
       h2 {
@@ -235,6 +330,8 @@
         font-weight: lighter;
         font-size: 1.75rem;
         margin-bottom: 1.5em;
+        font-family: $avenir-light;//wrong font
+        color:$font-color;
       }
       h6{
         color: #009CEA;
@@ -251,6 +348,11 @@
         a{
           background-image: linear-gradient(to right,#009CEA,  #1E3D77);
           padding: 1rem 2.5rem;
+          font-family: $avenir-light; //wrong font
+          span{
+            font-size: 16px;
+            font-weight: bolder;
+          }
         }
         
       }
@@ -324,6 +426,9 @@
     .accordion .content p {
       font-size: 1.75rem;
       font-weight: 300;
+      font-weight: lighter;
+      font-family: $avenir-light;
+      color: $font-color;
     }
     
     .accordion .content.active {
@@ -353,11 +458,19 @@
   .newsletter{
     padding: 0 6em 3em 6em;
 
+    @media screen and (max-width:768px) {
+      padding: 0 0.5em 2em 0.5em;
+    }
+
     .newsletter-heading{
       h2{
         font-weight: bolder;
         font-family: $avenir-black;
         color: $heading-blue;
+      }
+      p{
+        font-family: $avenir-light;
+        color: $font-color;
       }
     }
 
@@ -370,20 +483,29 @@
         display: inline-block;
         width: 76%;
 
+        @media screen and (max-width:600px) {
+          width:60%;
+        }
+
         input{
           width: 100%;
           padding: 1em 2em;
           border: none;
+          font-family: $avenir-light;
           background-color: transparent;
           &:focus{
             border: none;
             outline: none;
           }
+          
         }
       }
       .submit{
         display: inline-block;
         width: 22%;
+        @media screen and (max-width:600px) {
+          width:35%;
+        }
 
         button{
           width: 100%;
@@ -392,6 +514,7 @@
           border-radius: 25px;
           position: relative;
           left: 8px;
+          font-family: $avenir-light;
           background-color: $heading-blue;
           color: white;
 

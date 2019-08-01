@@ -1,0 +1,143 @@
+.about-us{
+    padding-top: 125px;
+    font-family: $avenir-light !important;
+
+    .about-section{
+        padding-top: 3em;
+        padding-bottom: 3em;
+        .header{
+            padding-top: 3em;
+            padding-bottom: 3em;
+            h2{
+                font-family: $avenir-black;
+                color: $heading-blue;
+                font-weight: bolder;
+
+                
+            }
+        }
+        .row{
+            .col-md-6{
+                p{
+                    line-height: 2;
+                    padding-bottom: 2em;
+                    font-size:16px;
+                }
+            }
+        }
+       
+    }
+
+    
+}
+
+.awesome-features{
+    font-family: $avenir-light;
+    h2{
+        font-family: $avenir-black;
+        color: $heading-blue;
+        font-weight: bolder;
+
+        &:after{
+            content: "";
+            border-bottom: 4px solid $twitter-blue;
+            width: 8%;
+            display: block;
+            padding-top: 0.5em;
+            margin: 0px auto;
+        }
+    }
+    p{
+        padding: 0.2em 0em 3em 0em;
+        font-family: $avenir-light;
+        font-size: 20px;
+    }
+
+    .row{
+
+        &:nth-child(2){
+            .col-md-3{
+                img{
+                    min-height: 93px;
+
+                    @media screen and (max-width:600px) {
+                        width:60%;
+                        min-height:44px;
+                    }
+                
+                }
+            }
+           
+        }
+    }
+
+    .caption{
+        font-family: $avenir-light;
+        padding: 2em 0;
+    }
+
+    .colleague-images{
+        h4{
+            font-weight: lighter;
+            font-family: $avenir-light;
+            padding: 2em 0em;
+
+            &:after{
+                content: "";
+                width: 5%;
+                border-bottom: 4px solid $twitter-blue;
+                display: block;
+                margin: 0px auto;
+                padding-top: 0.8em;
+            }
+        }
+        .col-6{
+            @media screen and (max-width:600px) {
+                &:nth-child(2n+1){
+                    padding-left:0px !important;
+                }
+                &:nth-child(2n){
+                    padding-right:0px !important;
+                }
+            }
+        }
+        img{
+            padding: 3px;     
+            @media screen and (min-width:$breakpoint) {
+                height: 307px;
+
+               
+            }
+        }
+    }
+    .coin-images-container{
+        padding: 4em 8em;
+
+        @media screen {
+            padding:4em 1em;
+        }
+      
+
+        .paypal-adjust{
+            position: relative;
+            bottom: 15px;
+
+            @media screen and (max-width:600px) {
+                bottom:8px;
+            }
+        }
+
+        .col-md-3{
+            text-align: center;
+            img{
+                width: 50%;
+
+                @media screen and (max-width:600px) {
+                    width:100%
+                }
+    
+            }
+
+        }
+    }
+}

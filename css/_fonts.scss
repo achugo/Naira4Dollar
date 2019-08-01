@@ -1,13 +1,34 @@
 @font-face {
     font-family: "Avenir Black";
     src: url("../fonts/Avenir-Black-webfont.woff");
-    src: url("../fonts/Avenir-Medium-webfont.woff");
-    src: url("../fonts/avenir-light-webfont.woff");
-    src: url("../fonts/Avenir-Roman-webfont.woff");
+    
 
 }
+@font-face {
+    font-family: "Avenir Light";
+    src: url("../fonts/avenir-light-webfont.woff");
+    
+
+}
+@font-face {
+    font-family: "Avenir Medium";
+    src: url("../fonts/Avenir-Medium-webfont.woff");
+    
+
+}
+@font-face {
+    font-family: "Avenir Roman";
+    src: url("../fonts/Avenir-Roman-webfont.woff");
+    
+
+}
+
+
+    
+  
 
 $avenir-black: "Avenir Black";
 $avenir-medium: "Avenir Medium";
 $avenir-light: "Avenir Light";
 $avenir-roman: "Avenir Roman";
+$comfortaa: "Comfortaa", cursive;
