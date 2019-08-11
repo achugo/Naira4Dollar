@@ -216,26 +216,34 @@ div{
   }
 
   .owl-carousel .owl-item.remove-padding{
-    visibility: hidden;
+    @media screen and (min-width:600px){
+      visibility: hidden;
+    }
+  
   }
   .owl-carousel .owl-item.remove-paddingg{
-    visibility: hidden;
+    @media screen and (min-width:600px){
+      visibility: hidden;
+    }
   }
 
   .owl-carousel .owl-item.medium {
-    margin-right: -11px !important;
-    position: relative;
-    bottom: 50px;
-    border-radius: 18px;
-    z-index: 99999999999999;
-    width: 380px;
-    .item{
-      margin: 2em 0 !important;
-      height: 268px;
-      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
-      z-index: 999999 !important;
-      background-color: white;
+    @media screen and (min-width:600px){
+      margin-right: -11px !important;
+      position: relative;
+      bottom: 50px;
+      border-radius: 18px;
+      z-index: 99999999999999;
+      width: 380px;
+      .item{
+        margin: 2em 0 !important;
+        height: 268px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+        z-index: 999999 !important;
+        background-color: white;
+      }
     }
+   
   }
 
   .owl-theme .owl-nav [class*=owl-]:hover {
