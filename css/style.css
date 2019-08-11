@@ -698,6 +698,12 @@ nav ul li ul li a {
   min-height: 90vh;
 }
 
+@media screen and (max-width: 768px) {
+  .carousel-wrapper .carousel-inner {
+    bottom: 14px;
+  }
+}
+
 @media screen and (max-width: 786px) {
   .carousel-wrapper .carousel-inner .item img {
     height: 40vh;
@@ -1075,7 +1081,7 @@ nav ul li ul li a {
 
 @media screen and (max-width: 600px) {
   .testimonials button {
-    display: none;
+    display: none !important;
   }
 }
 

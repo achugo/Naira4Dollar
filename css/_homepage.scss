@@ -12,6 +12,9 @@
     min-height: 90vh;
 
     .carousel-inner{
+      @media screen and (max-width:768px) {
+        bottom:14px
+      }
 
       .item{
         img{
@@ -363,7 +366,7 @@
   top: 0px;
 
   @media screen and (max-width:600px) {
-    display: none;
+    display: none !important;
   }
   
  }
