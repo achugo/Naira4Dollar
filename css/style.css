@@ -334,7 +334,7 @@ header .top-nav a {
 @media screen and (max-width: 600px) {
   header .top-nav a {
     font-size: 7px;
-    padding-left: 3px;
+    padding-left: 1px;
   }
 }
 
