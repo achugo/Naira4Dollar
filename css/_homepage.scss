@@ -50,6 +50,12 @@
         top:8%;
         left:5%;
       }
+      @media  (min-width:1400px) and (max-width:1700px) {
+        left: 13.2% !important;
+      }
+      @media screen and (min-width:1700px) {
+        left: 17.2% !important;
+      }
 
       h3{
         font-size: 34px;
@@ -137,12 +143,27 @@
     }
     .ellipse-one{
       position: absolute;
-      right:1364px;
+      // right:1364px; 
+      right:1234px;
+      @media  (min-width:1400px) and (max-width:1700px) {
+        right:1364px;
+      }
+
+      @media screen and (min-width:1700px) {
+        right:1540px;
+      }
 
     }
     .ellipse-two{
       position: absolute;
-      left: 1364px;
+      // left: 1364px;
+      left: 1234px;
+      @media (min-width:1400px) and (max-width:1700px) {
+        left:1364px
+      }
+      @media screen and (min-width:1700px) {
+        left:1540px;
+      }
       
     }
   }
@@ -150,7 +171,7 @@
   .payment-images{
 
     .row{
-      width:100%;
+      // width:100%;
       text-align: center;
     }
     .coin-images-container{
@@ -273,7 +294,7 @@
   }
 }
 .testimonials{
-  
+  font-family: $avenir-light;
   padding-top: 7rem;
   
   h2{
@@ -281,30 +302,55 @@
     color: $heading-blue;
     font-weight: bolder;
   }
-  .item{
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
-    border-radius: 18px;
-    padding:3em 2em;
-    min-width: 370px;
+  .owl-item{
+    // margin-right: 0px !important;
+    width: 355px !important;
+    margin-right:0px;
+    @media screen and (max-width:768px){
+      width:343px !important;
+    }
+    &:active{
+      z-index: 9999;
+    }
+  
+  
+    .item{
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+      border-radius: 18px;
+      padding:3em 2em;
+      min-width: 370px;
+      position: relative;
+      top: 30px;
+      margin: 7px;
+
+      @media screen and (max-width:767px) {
+        min-width:200px;
+      }
+    }
   }
+ 
 
-  // .owl-carousel{
-  //   .owl-stage{
-  //     .active{
+  .owl-carousel{
+    button.owl-dot{
+      span{
+        display: none;
+      }
+     }
+    .owl-stage-outer{
+        padding-left: 14px;
 
-  //       &:nth-child(2){
-  //         background-color: pink !important;
-  //       }
-  //     }
-  //   }
-  // }
-  // .middle-testimonial{
-  //   background-color: pink;
-
-  // }
-  .big{
-    background-color: yellow;
+    }
   }
+ button{
+  position: absolute;
+  top: 0px;
+
+  @media screen and (max-width:600px) {
+    display: none;
+  }
+  
+ }
+ 
 
   
 }
@@ -526,6 +572,14 @@
     }
   }
 
+  .tweet-tweet{
+    iframe{
+      width: 100% !important;
+     
+      
+    }
+  }
+
   footer{
     background-color: $heading-blue;
     color: #ffffff;
@@ -549,6 +603,7 @@
         img{
           width: 65%;
           padding:1.5em 0;
+          height: 85.1px;
         }
         
       }
@@ -567,12 +622,35 @@
           }
         }
       }
+      .media-footer{
+        a{
+          display: inline-block;
+          padding-right: 5px;
+          color: white;
+
+          &:hover{
+            text-decoration: none;
+            color: white;
+          }
+
+          &:nth-child(3){
+            display: block;
+            padding-top: 10px;
+          }
+          img{
+            padding: 3px;
+          }
+        }
+      }
     }
 
     .twitter{
 
       .static-pages{
 
+        .footer-heading{
+          visibility: hidden;
+        }
         ul.page-listing{
           list-style-type: none;
           padding-left: 0px;
@@ -598,10 +676,31 @@
         }
       }
     }
+    .offices{
+      .footer-heading{
+        padding-top: 3em;
+        span{
+          border-bottom: 5px solid $twitter-blue;
+          display: inline-block;
+          position: relative;
+          bottom: 5px;
+          width: 25px;
+        }
+        h5{
+          font-size: 18px;
+          padding-left: 0.5em;
+          display: inline-block
+        }
+      }
+      .row{
+        padding-top: 0px !important;
+      }
+    }
     .footer-bottom{
       background-color: #0E295A;
       color: #ffffff;
       text-align: center;
+      margin-top: 2em;
       span{
         display: inline-block;
         text-align: center;

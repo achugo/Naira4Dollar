@@ -66,3 +66,181 @@ div{
 
 
   .owl-carousel .owl-item.big {background:#ac0000 !important;}
+
+
+  .purchase-coin{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+    color: #808080;
+    padding: 2rem 1rem 0rem 0rem;
+    border-radius: 30px;
+    .signature-wrapper{
+       
+        .coin-image {
+            display: inline-block;
+            img{
+              width: 100%;
+            }
+          }
+          .rate-stats{
+            display: inline-block;
+            top: 10px;
+            padding-left: 10px;
+            position: relative;
+            img{
+              width: 100%;
+            }
+            span{
+              display: block;
+              font-family: $comfortaa;
+              font-weight: bolder;
+              font-size: 10px;
+              line-height: 2;
+              
+              span{
+                padding-left: 40px;
+                display: inline-block;
+              }
+            }
+          }
+    
+          .rate-change{
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            padding-left: 10px;
+            img{
+              width: 40%;
+              left: 40px;
+              bottom: 20px;
+              position: relative;
+            }
+            span{
+              display: inline-block;
+              font-weight: bolder;
+              font-size: 18px;
+              color: red
+            }
+          }
+    }
+    
+  }
+
+  #upload-avatar {
+    z-index: 99991080 !important;
+    
+    .modal-content{
+      width: 80%;
+      form{
+        select{
+          width: 90%;
+          padding: 0.8em;
+        }
+        input{
+          width: 90%;
+          padding: 0.5em;
+        }
+        button{
+          background-color: aqua;
+        }
+      }
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 800px) {
+    
+    /* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+}
+
+
+
+  .invalid{
+    background-color:rgb(232, 240, 254) !important;
+  }
+ 
+  .container{
+    @media screen and (min-width:1400px) {
+      max-width: 1260px !important;
+      width: 1140px !important;
+    }
+  }
+
+  .timeline-Tweet-text{
+    font-size: 20px !important;
+  }
+
+  .owl-carousel .owl-item.remove-padding{
+    visibility: hidden;
+  }
+  .owl-carousel .owl-item.remove-paddingg{
+    visibility: hidden;
+  }
+
+  .owl-carousel .owl-item.medium {
+    margin-right: -11px !important;
+    position: relative;
+    bottom: 50px;
+    border-radius: 18px;
+    z-index: 99999999999999;
+    width: 380px;
+    .item{
+      margin: 2em 0 !important;
+      height: 268px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+      z-index: 999999 !important;
+      background-color: white;
+    }
+  }
+
+  .owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+}

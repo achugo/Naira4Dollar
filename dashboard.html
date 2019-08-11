@@ -8,6 +8,7 @@
     <!-- owl carousel stylesheet -->
     <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- project stylesheet -->
@@ -52,29 +53,38 @@
                           </div>
                           <nav class="">
                             <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                            <ul class="nav-list">
+                            <ul class="nav-list dash-navv">
+                              
+                              <li class="hide-desktop">
+                                <img src="./images/Ellipse 46.png" alt="">
+                              </li>
                               <li>
                                 <a href="#!">HOME</a>
                               </li>
                                
                             
                               <li>
-                                <a href="#!">Portfolio</a>
+                                <a href="#!">MY ACCOUNT</a>
                                 <ul class="nav-dropdown">
+                                  
                                   <li>
-                                    <a href="#!">Web Design</a>
+                                    <a href="#!">Profile</a>
                                   </li>
                                   <li>
-                                    <a href="#!">Web Development</a>
+                                    <a href="#!">Referral Bonus</a>
                                   </li>
                                   <li>
-                                    <a href="#!">Graphic Design</a>
+                                    <a href="#!">Change password</a>
+                                  </li>
+                                  <li>
+                                    <a href="#!" class="logout">Logout</a>
                                   </li>
                                 </ul>
                               </li>
-                              <li>
+                              <li class="hide-mobile">
                                 <img src="./images/Ellipse 46.png" alt="">
                               </li>
+                              <li class="hide-desktop">USER ID: 324244</li>
                         
                             </ul>
                           </nav>
@@ -87,103 +97,375 @@
                     <h3>Click the e-currency you want to buy or sell</h3>
                 </div>
                 <div class="col-md-4 col-4 text-center">
-                    <span>USER ID: 185357</span>
+                    <h3 class="hide-mobile">USER ID: 185357</h3>
                 </div>
             </div>
         </div>
-
-        <div class="container payment-images">
-          <div class="row coin-images-container">
-            
-            <div class="col-md-12 rates dashboard-rate">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                      <div class="coin-image">
-                        <img src="./images/bt.png" alt="">
+        <div class="container-fluid maindashboard-content">
+            <div class="container payment-images dash">
+                <div class="row coin-images-container py-0">
+                  
+                  <div class="col-md-12 rates dashboard-rate hide-mobile">
+                      <div class="owl-carousel owl-theme">
+                          <div class="item">
+                            <div class="coin-image">
+                              <img src="./images/bt.png" alt="">
+                            </div>
+                            <div class="rate-stats">
+                              <span>Bitcoin (BTC)</span>
+                              <span>Buy <span>$9090</span> </span>
+                              <span>Sell <span>$9090</span></span>
+                            </div>
+                            <div class="rate-change">
+                              <span>0.024</span>
+                              <img src="./images/arrow-down.png" alt="">
+                            </div>
+                            <div class="click-here"><button class="btn"  data-toggle="modal" data-target="#dashboardBuy">Click here</button></div>
+                          </div>
+                          <div class="item">
+                              <div class="coin-image">
+                                <img src="./images/bt.png" alt="">
+                              </div>
+                              <div class="rate-stats">
+                                <span>Bitcoin (BTC)</span>
+                                <span>Buy <span>$9090</span> </span>
+                                <span>Sell <span>$9090</span></span>
+                              </div>
+                              <div class="rate-change">
+                                <span>0.024</span>
+                                <img src="./images/arrow-down.png" alt="">
+                              </div>
+                              <div class="click-here"><button class="btn"  data-toggle="modal" data-target="#dashboardBuy">Click here</button></div>
+                            </div>
+                            <div class="item">
+                              <div class="coin-image">
+                                <img src="./images/bt.png" alt="">
+                              </div>
+                              <div class="rate-stats">
+                                <span>Bitcoin (BTC)</span>
+                                <span>Buy <span>$9090</span> </span>
+                                <span>Sell <span>$9090</span></span>
+                              </div>
+                              <div class="rate-change">
+                                <span>0.024</span>
+                                <img src="./images/arrow-down.png" alt="">
+                              </div>
+                              <div class="click-here"><button class="btn"  data-toggle="modal" data-target="#dashboardBuy">Click here</button></div>
+                            </div>
+                            <div class="item">
+                              <div class="coin-image">
+                                <img src="./images/bt.png" alt="">
+                              </div>
+                              <div class="rate-stats">
+                                <span>Bitcoin (BTC)</span>
+                                <span>Buy <span>$9090</span> </span>
+                                <span>Sell <span>$9090</span></span>
+                              </div>
+                              <div class="rate-change">
+                                <span>0.024</span>
+                                <img src="./images/arrow-down.png" alt="">
+                              </div>
+                              <div class="click-here"><button class="btn"  data-toggle="modal" data-target="#dashboardBuy">Click here</button></div>
+                            </div>
+                            <div class="item">
+                              <div class="coin-image">
+                                <img src="./images/bt.png" alt="">
+                              </div>
+                              <div class="rate-stats">
+                                <span>Bitcoin (BTC)</span>
+                                <span>Buy <span>$9090</span> </span>
+                                <span>Sell <span>$9090</span></span>
+                              </div>
+                              <div class="rate-change">
+                                <span>0.024</span>
+                                <img src="./images/arrow-down.png" alt="">
+                              </div>
+                              <div class="click-here"><button class="btn"  data-toggle="modal" data-target="#dashboardBuy">Click here</button></div>
+                            </div>                   
+                          
                       </div>
-                      <div class="rate-stats">
-                        <span>Bitcoin (BTC)</span>
-                        <span>Buy <span>$9090</span> </span>
-                        <span>Sell <span>$9090</span></span>
-                      </div>
-                      <div class="rate-change">
-                        <span>0.024</span>
-                        <img src="./images/arrow-down.png" alt="">
-                      </div>
-                      <div class="click-here"><button class="btn">Click here</button></div>
+                  </div>  
+                  <div class="col-md-12 hide-desktop padding-lr0 hide-desktop">
+                      <div class="purchase-coin ">
+                        <div class="signature-wrapper">
+                            <div class="coin-image">
+                                <a data-toggle="modal" data-target="#dashboardBuy"><img src="./images/bt.png" alt=""></a> 
+                              </div>
+                              <div class="rate-stats">
+                                <span>Bitcoin (BTC)</span>
+                                <span>Buy <span>$9090</span> </span>
+                                <span>Sell <span>$9090</span></span>
+                              </div>
+                              <div class="rate-change">
+                                <span>0.024</span>
+                                <a data-toggle="modal" data-target="#dashboardBuy"><img src="./images/arrow-down.png" alt=""></a> 
+                              </div>
+                              
+                        </div>
+                        <div class="signature-wrapper">
+                            <div class="coin-image">
+                                <a data-toggle="modal" data-target="#dashboardBuy"><img src="./images/bt.png" alt=""></a> 
+                              </div>
+                              <div class="rate-stats">
+                                <span>Bitcoin (BTC)</span>
+                                <span>Buy <span>$9090</span> </span>
+                                <span>Sell <span>$9090</span></span>
+                              </div>
+                              <div class="rate-change">
+                                <span>0.024</span>
+                                <img src="./images/arrow-down.png" alt="">
+                              </div>
+                              
+                        </div>
+                        <div class="signature-wrapper">
+                            <div class="coin-image">
+                                <img src="./images/bt.png" alt="">
+                              </div>
+                              <div class="rate-stats">
+                                <span>Bitcoin (BTC)</span>
+                                <span>Buy <span>$9090</span> </span>
+                                <span>Sell <span>$9090</span></span>
+                              </div>
+                              <div class="rate-change">
+                                <span>0.024</span>
+                                <img src="./images/arrow-down.png" alt="">
+                              </div>
+                              
+                        </div>
+                          
+                          
+                        </div>
+                  </div>
+                          
+              </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col md-3">
+                      <img src="./images/Untitled-2.png" class="img-fluid" alt="">
+                      <button class="btn referral">Click here</button>
                     </div>
-                    <div class="item">
-                        <div class="coin-image">
-                          <img src="./images/bt.png" alt="">
-                        </div>
-                        <div class="rate-stats">
-                          <span>Bitcoin (BTC)</span>
-                          <span>Buy <span>$9090</span> </span>
-                          <span>Sell <span>$9090</span></span>
-                        </div>
-                        <div class="rate-change">
-                          <span>0.024</span>
-                          <img src="./images/arrow-down.png" alt="">
-                        </div>
-                        <div class="click-here"><button class="btn">Click here</button></div>
+                    <div class="col-md-9">                                                         
+                      <div class="table-responsive">          
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>ORDER STATUS</th>
+                            <th>DATE</th>
+                            <th class="numeric">TYPE</th>
+                            <th class="numeric">AMT</th>
+                            <th class="numeric">AMT IN NAIRA</th>
+                            <th class="numeric">PAY DATE</th>
+                            <th class="numeric">MONEY PAID</th>
+                            <th class="numeric">ACTION</th>
+                            <th class="numeric">ACCOUNT NUMBER</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>AnnaAnna1AnnaAnna1</td>
+                            <td>AnnaAnnaAnna1</td>
+                            <td>PittAnnaAnna1</td>
+                            <td>35AnnaAnna1</td>
+                            <td>New YorkAnnaAnna1</td>
+                            <td>USAAnnaAnna1</td>
+                            <td>PitAnnaAnna1AnnaAnna1t</td>
+                            <td>35AnnaAnna1AnnaAnna1</td>
+                            <td>ninthAnnaAnna1AnnaAnna1 one</td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
                       </div>
-                      <div class="item">
-                        <div class="coin-image">
-                          <img src="./images/bt.png" alt="">
+                      <div class="statistics">
+                        <div class="brought">
+                          <span class="text">So far you have bought </span> <span>amount</span>
+                          <span class="text">Worth </span> <span>amount</span>
+                          <span class="text">Sold </span> <span>amount</span>
+                          <span class="text">Worth </span> <span>amount</span>
                         </div>
-                        <div class="rate-stats">
-                          <span>Bitcoin (BTC)</span>
-                          <span>Buy <span>$9090</span> </span>
-                          <span>Sell <span>$9090</span></span>
-                        </div>
-                        <div class="rate-change">
-                          <span>0.024</span>
-                          <img src="./images/arrow-down.png" alt="">
-                        </div>
-                        <div class="click-here"><button class="btn">Click here</button></div>
                       </div>
-                      <div class="item">
-                        <div class="coin-image">
-                          <img src="./images/bt.png" alt="">
-                        </div>
-                        <div class="rate-stats">
-                          <span>Bitcoin (BTC)</span>
-                          <span>Buy <span>$9090</span> </span>
-                          <span>Sell <span>$9090</span></span>
-                        </div>
-                        <div class="rate-change">
-                          <span>0.024</span>
-                          <img src="./images/arrow-down.png" alt="">
-                        </div>
-                        <div class="click-here"><button class="btn">Click here</button></div>
-                      </div>
-                      <div class="item">
-                        <div class="coin-image">
-                          <img src="./images/bt.png" alt="">
-                        </div>
-                        <div class="rate-stats">
-                          <span>Bitcoin (BTC)</span>
-                          <span>Buy <span>$9090</span> </span>
-                          <span>Sell <span>$9090</span></span>
-                        </div>
-                        <div class="rate-change">
-                          <span>0.024</span>
-                          <img src="./images/arrow-down.png" alt="">
-                        </div>
-                        <div class="click-here"><button class="btn">Click here</button></div>
-                      </div>                   
+                     
+                    </div>
                     
                 </div>
-            </div>  
-                     
-          </div>
+               
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="impressed">Impressed? Write us a testimony</div>
+                        <form class="testimony-form">
+                  
+                            <div class="form-group"> 
+                                   <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            
+                          </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
           
               
          
           
         </div>
 
+       
+
+        
+
     </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="dashboardBuy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <div class="modal-title" id="exampleModalLongTitle">
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#sell">Sell</a></li>
+            <li><a data-toggle="pill" href="#buy">Buy</a></li>
+            
+          </ul>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="tab-content">
+          <div id="sell" class="tab-pane fade in active">
+              <p>
+                  <a href="#" data-toggle="modal" data-target="#upload-avatar" class="button"><i class="fa fa-plus"></i>Add New Bank</a>
+              </p>
+            <h3></h3>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6">
+                      <input type="radio" name="account" id="">
+                      <span>jhhiggufjd yufuyfufu uuyrryru u yrryyry yy</span> 
+                    </div>
+                    <div class="col-md-6">
+                        <input type="radio" name="account" id="">
+                        <span>name jhhiggufjd yufuyfufu uuyrryru u yrryyry yy</span> 
+                    </div>
+      
+                  </div>
+                  <div class="row sellForm">
+                    <div class="col-md-6 ">
+                      <input type="text" placeholder="Amount in btc" name="" id="">
+                      <i class="fa fa-bitcoin"></i>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="" id="">
+                        <i>$</i>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="" id="">
+                        <i>₦</i>
+                    </div>
+                    <div class="col-md-12 mt-2 mb-2">
+                        Due to the volatile nature of BTC, This amount will be re-calculated based on the amount you sent and prevailing BTC rate as at the time we receive your transfer. IT MAY BE DIFFERENT FROM THIS AMOUNT.
+                    </div>
+                    <div class="col-md-8">
+                      <textarea name="" id="" cols="30" placeholder="comment" rows="10"></textarea>
+                    </div>
+                  </div>
+                  <div class="submit mt-4 mb-4"><button class="btn btn-primary" type="submit">Click to Proceed</button></div>
+            </form>
+            
+            
+          </div>
+          <div id="buy" class="tab-pane fade">
+            <form action="">
+                
+                  <div class="row sellForm">
+                    <div class="col-md-12">
+                      <input type="text" name="" id="" placeholder="Discount code, Leave Blank if none">
+                    </div>
+                    <div class="col-md-6 ">
+                      <input type="text" placeholder="Amount in btc" name="" id="">
+                      <i class="fa fa-bitcoin"></i>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="" id="">
+                        <i>$</i>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="" id="">
+                        <i>₦</i>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="text" name="" id="" placeholder="Your BTC Address">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" name="" id="" placeholder="Your BTC Address Again">
+                    </div>
+                    <div class="col-md-12 mt-2 mb-2">
+                        Due to the volatile nature of BTC, This amount will be re-calculated based on the amount you sent and prevailing BTC rate as at the time we receive your transfer. IT MAY BE DIFFERENT FROM THIS AMOUNT.
+                    </div>
+                    <div class="col-md-8">
+                      <textarea name="" id="" cols="30" placeholder="comment" rows="10"></textarea>
+                    </div>
+                  </div>
+                  <div class="submit mt-4 mb-4"><button class="btn btn-primary" type="submit">Click to Proceed</button></div>
+            </form>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!--Modal for uploading photo-->
+<div class="modal" id="upload-avatar" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="upload-avatar-title">Add New Bank Details</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <select name="" id="">
+                <option value="" disabled>Select Bank</option>
+                <option value="">Diamond Bank</option>
+                <option value="">Guarantee Trust Bank</option>
+                <option value="">Zenith Bank</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="account number" id="accountNo">
+            </div>        
+            <div class="form-group">
+                <button type="button" class="btn hl-btn-green">Validate</button>
+            </div>
+            <span>Select your bank .Enter your account number .Click validate and wait for account name.</span>
+          
+          </form>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+<!-- <div class="container">
+  
+  
+  
+</div> -->
+
     <!-- <script>
       $(document).ready(function(){
         $(".owl-carousel").owlCarousel();

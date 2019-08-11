@@ -1,0 +1,61 @@
+.profile-container{
+    padding-top: 125px;
+    background-color: #F9FDFF;
+    margin-bottom: 4em;
+
+    .profile-form{
+        padding: 3em;
+        div.profile-picture{
+            display: inline-block;
+            width: 48%;
+        }
+        div.edit{
+            display: inline-block;
+            width: 48%;
+            
+            button{
+                float: right;
+                padding: 1em;
+                border-radius: 15px;
+            }
+        }
+        .salutation{
+            padding-bottom: 2em;
+            border-bottom: 2px solid black;
+        }
+        .form-inline{
+            display: inline-block;
+            width: 47%;
+            padding: 1.4em 0;
+
+            @media screen and (max-width:768px) {
+                display:block;
+                width:100%;
+                padding:1em 0;
+            }
+
+            input{
+                width: 100%;
+                border-radius: 30px;
+                padding: 2em;
+
+                @media screen and (max-width:768px) {
+                    padding: 1.5em;
+                }
+            }
+
+            select{
+                width: 100%;
+                padding: 1em;
+                border-radius: 30px;
+            }
+
+            label{
+                justify-content: left;
+                font-family: $avenir-roman;
+                padding-left: 20px;
+                font-weight: lighter;
+            }
+        }
+    }
+}

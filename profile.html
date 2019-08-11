@@ -93,56 +93,72 @@
                   </section>
     </header>
 
-      
-        <div class="login">  
-                <div class="header">
-                    <h2>My Account</h2>
-                </div>
-            <div class="container login-form">
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-4">
-                            <form>
-                                    <div class="heading text-center">
-                                        <h3>Login</h3>
-                                    </div>
-                                    <div class="form-group">   
-                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail" id="emailHelp" class="form-text text-muted">
-                                    </div>
-                                    <div class="form-group">
-                                      <input type="password" class="form-control" placeholder="Password">
-                                    </div>
-                                    <div class="form-check">
-                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary">LOGIN</button>
-                                    </div>
-                                    <div class="signup-login">If you don't have an account<span class="px-4"><a href="#">Sign up</a></span></div>
+        <div class="container-fluid profile-container">
+            <div class="container">
+                <h4>Profile</h4>
+                <div class="card">
+                        <form class="profile-form">
+                            <div class="profile-picture">
+                                <img src="./images/Ellipse 46.png" alt="">
+                            </div>
+                            <div class="edit">
+                                <button class="btn btn-primary">Edit Profile</button>
+                            </div>
+                            <div class="form-group salutation">
+                                Dear Dr Smile
+                            </div>
+
+                                <div class="form-inline">
+                                    <label for="firstName">FIRST NAME</label>
+                                  <input type="text" class="form-control" id="firstName" class="form-text text-muted">
+                                </div>
+                                  
+                                <div class="form-inline"> 
+                                    <label for="lastName">LAST NAME</label>  
+                                    <input type="text" class="form-control" id="lastName" class="form-text text-muted">
+                                </div>
+                                <div class="form-inline">
+                                    <label for="email">EMAIL ADDRESS</label>
+                                    <input type="text" class="form-control" id="email" class="form-text text-muted">
+                                </div>
                                     
-                                  </form>
-                    </div>
-                  
+                                <div class="form-inline"> 
+                                    <label for="phone">Phone Number</label>  
+                                    <input type="text" class="form-control" id="phone" class="form-text text-muted">
+                                </div>
+                                <div class="form-inline"> 
+                                    <label for="dob">DATE OF BIRTH</label>  
+                                    <input type="text" class="form-control" id="dob" class="form-text text-muted">
+                                </div>
+                                <div class="form-inline"> 
+                                    <label for="phone">GENDER</label>  
+                                    <select name="" id="">
+                                        <option value="gender">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>                                
+                              </form>
                 </div>
             </div>
         </div>
 
-        
-
-       
-       
-
        
 
         
-        
-      
 
     </div>
+    <!-- <script>
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+      });
+    </script> -->
+
 
     
-
+    <!-- <script src="./js/faq.js"></script> -->
     <script src="./js/navbar.js"></script>
-    
 </body>
 </html>

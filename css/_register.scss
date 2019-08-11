@@ -53,6 +53,23 @@
                         border-radius: 25px;
                         background-image: linear-gradient(to right,#009CEA,  #1E3D77);
                     }
+                    .tab{
+                        .input-group-addon{
+                            display: inline;
+                            position: absolute;
+                            right: 20px;
+                            top: 6px;
+                            background-color: transparent;
+                            z-index: 99;
+                            border: none;
+                        }
+
+                        select{
+                            width: 100%;
+                            padding: 0.7em;
+                            border-radius: 25px;
+                        }
+                    }
                 }
             }
         }
@@ -61,5 +78,16 @@
        
     }
 
+    .nav-buttons{
+        overflow:auto;
+
+        .register-steps{
+            button{
+                width: 49% !important;
+                border:none;
+            }
+        }
+       
+    }
     
 }
