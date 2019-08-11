@@ -113,6 +113,25 @@
 
     .header{
       padding-bottom: 2rem;
+      img{
+        width:6%;
+        padding-right: 1rem;
+        padding-bottom: 1.3rem;
+        display: inline-block;
+        @media screen and (max-width:600px){
+          width:15%;
+        }
+      }
+  
+      h2{
+        display: inline-block;
+        font-family: $avenir-black;
+        color: $heading-blue;
+        font-weight: bolder;
+        @media screen and (max-width:600px) {
+          font-size:20px;
+        }
+      }
     }
 
     img{

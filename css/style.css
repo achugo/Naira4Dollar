@@ -813,6 +813,32 @@ nav ul li ul li a {
   padding-bottom: 2rem;
 }
 
+.why-choose .header img {
+  width: 6%;
+  padding-right: 1rem;
+  padding-bottom: 1.3rem;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .why-choose .header img {
+    width: 15%;
+  }
+}
+
+.why-choose .header h2 {
+  display: inline-block;
+  font-family: "Avenir Black";
+  color: #1E3D77;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+  .why-choose .header h2 {
+    font-size: 20px;
+  }
+}
+
 .why-choose img {
   width: 6%;
   padding-right: 1rem;
