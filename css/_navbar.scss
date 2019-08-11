@@ -338,12 +338,23 @@ nav {
       li {
         float: none;
         // background-color: $mobile-nav-bg;
-        
-        a {
-          color: $nav-font-color !important;
-          padding: 15px 15px 15px 35px;
-          line-height: 20px;
+        &:nth-child(5){
+          a {
+            color: $nav-font-color !important;
+            padding: 15px 15px 15px 35px;
+            line-height: 20px;
+            
+          }
         }
+        &:nth-child(6){
+          a {
+            color: $nav-font-color !important;
+            padding: 15px 15px 15px 35px;
+            line-height: 20px;
+            
+          }
+        }
+       
         ul li a {
           padding-left: 30px;
         }
