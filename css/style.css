@@ -549,6 +549,13 @@ nav ul li a:visited {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  nav ul li a,
+  nav ul li a:visited {
+    color: #1E3D77 !important;
+  }
+}
+
 nav ul li a:hover,
 nav ul li a:visited:hover {
   color: #ffffff;
@@ -645,7 +652,7 @@ nav ul li ul li a {
 
 #nav-toggle {
   position: absolute;
-  left: 18px;
+  left: 45px;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;

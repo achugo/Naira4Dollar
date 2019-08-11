@@ -263,6 +263,10 @@ nav {
         vertical-align: middle;
         color: $nav-font-color;
         text-decoration: none;
+
+        @media screen and (max-width:768px) {
+          color: #1E3D77 !important
+        }
         &:hover {
           color: $nav-font-color;
           position: relative;
@@ -357,7 +361,7 @@ nav {
 }
 #nav-toggle {
   position: absolute;
-  left: 18px;
+  left: 45px;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
