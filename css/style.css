@@ -332,6 +332,12 @@ header .top-nav a {
   font-size: 12px;
 }
 
+@media screen and (max) {
+  header .top-nav a {
+    padding-right: 7px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   header .top-nav a {
     font-size: 7px;
@@ -915,7 +921,7 @@ nav ul li ul li a {
 
 @media (max-width: 1689px) and (min-width: 1502px) {
   .weird-ellipse .ellipse-one {
-    right: 1480px;
+    right: 1525px;
   }
 }
 
@@ -950,7 +956,7 @@ nav ul li ul li a {
 
 @media (max-width: 1689px) and (min-width: 1502px) {
   .weird-ellipse .ellipse-two {
-    left: 1480px;
+    left: 1525px;
   }
 }
 
