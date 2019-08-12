@@ -758,15 +758,33 @@ nav ul li ul li a {
   }
 }
 
-@media (min-width: 1400px) and (max-width: 1700px) {
+@media (min-width: 1400px) and (max-width: 1501px) {
   .carousel-wrapper .carousel-caption {
     left: 13.2% !important;
   }
 }
 
-@media screen and (min-width: 1700px) {
+@media (max-width: 1689px) and (min-width: 1502px) {
+  .carousel-wrapper .carousel-caption {
+    left: 13.2% !important;
+  }
+}
+
+@media (max-width: 1802px) and (min-width: 1690px) {
   .carousel-wrapper .carousel-caption {
     left: 17.2% !important;
+  }
+}
+
+@media (max-width: 2026px) and (min-width: 1802px) {
+  .carousel-wrapper .carousel-caption {
+    left: 19.2% !important;
+  }
+}
+
+@media (min-width: 2026px) {
+  .carousel-wrapper .carousel-caption {
+    left: 22.7% !important;
   }
 }
 
@@ -889,15 +907,33 @@ nav ul li ul li a {
   right: 1234px;
 }
 
-@media (min-width: 1400px) and (max-width: 1700px) {
+@media (min-width: 1400px) and (max-width: 1501px) {
   .weird-ellipse .ellipse-one {
-    right: 1364px;
+    right: 1380px;
   }
 }
 
-@media screen and (min-width: 1700px) {
+@media (max-width: 1689px) and (min-width: 1502px) {
   .weird-ellipse .ellipse-one {
-    right: 1540px;
+    right: 1480px;
+  }
+}
+
+@media (max-width: 1802px) and (min-width: 1690px) {
+  .weird-ellipse .ellipse-one {
+    right: 1580px;
+  }
+}
+
+@media (max-width: 2026px) and (min-width: 1802px) {
+  .weird-ellipse .ellipse-one {
+    right: 1680px;
+  }
+}
+
+@media (min-width: 2026px) {
+  .weird-ellipse .ellipse-one {
+    right: 1880px;
   }
 }
 
@@ -906,15 +942,33 @@ nav ul li ul li a {
   left: 1234px;
 }
 
-@media (min-width: 1400px) and (max-width: 1700px) {
+@media (min-width: 1400px) and (max-width: 1501px) {
   .weird-ellipse .ellipse-two {
-    left: 1364px;
+    left: 1380px;
   }
 }
 
-@media screen and (min-width: 1700px) {
+@media (max-width: 1689px) and (min-width: 1502px) {
   .weird-ellipse .ellipse-two {
-    left: 1540px;
+    left: 1480px;
+  }
+}
+
+@media (max-width: 1802px) and (min-width: 1690px) {
+  .weird-ellipse .ellipse-two {
+    left: 1580px;
+  }
+}
+
+@media (max-width: 2026px) and (min-width: 1802px) {
+  .weird-ellipse .ellipse-two {
+    left: 1680px;
+  }
+}
+
+@media (min-width: 2026px) {
+  .weird-ellipse .ellipse-two {
+    left: 1880px;
   }
 }
 

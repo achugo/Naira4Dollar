@@ -53,11 +53,20 @@
         top:8%;
         left:5%;
       }
-      @media  (min-width:1400px) and (max-width:1700px) {
+      @media  (min-width:1400px) and (max-width:1501px) {
         left: 13.2% !important;
       }
-      @media screen and (min-width:1700px) {
-        left: 17.2% !important;
+      @media (max-width:1689px) and (min-width:1502px) {
+        left:13.2% !important;
+      }
+      @media (max-width:1802px) and (min-width:1690px) {
+        left:17.2% !important;
+      }
+      @media (max-width:2026px) and (min-width:1802px) {
+        left:19.2% !important;
+      }
+      @media (min-width:2026px) {
+        left:22.7% !important;
       }
 
       h3{
@@ -167,12 +176,22 @@
       position: absolute;
       // right:1364px; 
       right:1234px;
-      @media  (min-width:1400px) and (max-width:1700px) {
-        right:1364px;
-      }
+     
 
-      @media screen and (min-width:1700px) {
-        right:1540px;
+      @media  (min-width:1400px) and (max-width:1501px) {
+        right: 1380px;
+      }
+      @media (max-width:1689px) and (min-width:1502px) {
+        right:1480px;
+      }
+      @media (max-width:1802px) and (min-width:1690px) {
+        right:1580px;
+      }
+      @media (max-width:2026px) and (min-width:1802px) {
+        right:1680px;
+      }
+      @media (min-width:2026px) {
+        right:1880px ;
       }
 
     }
@@ -180,13 +199,21 @@
       position: absolute;
       // left: 1364px;
       left: 1234px;
-      @media (min-width:1400px) and (max-width:1700px) {
-        left:1364px
+      @media  (min-width:1400px) and (max-width:1501px) {
+        left: 1380px;
       }
-      @media screen and (min-width:1700px) {
-        left:1540px;
+      @media (max-width:1689px) and (min-width:1502px) {
+        left:1480px;
       }
-      
+      @media (max-width:1802px) and (min-width:1690px) {
+        left:1580px;
+      }
+      @media (max-width:2026px) and (min-width:1802px) {
+        left:1680px;
+      }
+      @media (min-width:2026px) {
+       left: 1880px;
+      }
     }
   }
 
