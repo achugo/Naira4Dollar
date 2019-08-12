@@ -302,6 +302,7 @@ header {
 }
 
 header .top-nav {
+  font-family: "Avenir Roman" !important;
   position: relative;
   height: 37px;
 }
@@ -540,6 +541,12 @@ nav ul li:nth-child(6) a:visited {
   position: relative;
 }
 
+@media screen and (min-width: 600px) {
+  nav ul li:nth-child(6) a:visited {
+    color: #1E3D77;
+  }
+}
+
 nav ul li a,
 nav ul li a:visited {
   display: inline-block;
@@ -548,6 +555,7 @@ nav ul li a:visited {
   line-height: 1;
   vertical-align: middle;
   text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -1681,6 +1689,7 @@ footer .footer-bottom span {
   border-radius: 25px;
   background-image: -webkit-gradient(linear, left top, right top, from(#009CEA), to(#1E3D77));
   background-image: linear-gradient(to right, #009CEA, #1E3D77);
+  color: white;
 }
 
 .register .register-form .row .col-md-4 form .tab .input-group-addon {
@@ -1781,7 +1790,7 @@ footer .footer-bottom span {
 }
 
 .dashboard-content .row {
-  padding: 0 3em 2em 0;
+  padding: 1em 3em 2em 0;
   position: relative;
   bottom: 48px;
 }
@@ -1815,6 +1824,7 @@ footer .footer-bottom span {
   z-index: 9999;
   padding: 2rem 1rem 0rem 0rem;
   border-radius: 30px;
+  font-family: "Avenir Light" !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -1908,8 +1918,16 @@ footer .footer-bottom span {
   color: white;
   background-color: #2AA7E6;
   position: absolute;
-  top: 300px;
-  left: 115px;
+  top: 400px;
+  left: 215px;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .maindashboard-content .referral {
+    top: 310px;
+    left: 165px;
+  }
 }
 
 .maindashboard-content .row img {
@@ -1997,6 +2015,21 @@ footer .footer-bottom span {
   height: 119px;
 }
 
+.col-md-9 .table-responsive thead {
+  font-family: "Avenir Light";
+  color: white;
+  background-color: black;
+}
+
+.col-md-9 .table-responsive tbody {
+  font-family: "Avenir Roman";
+}
+
+.col-md-9 .table-responsive td {
+  border-top: 7px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
 header.dashboard {
   position: fixed;
   width: 100%;
@@ -2004,6 +2037,11 @@ header.dashboard {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.11);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.11);
+}
+
+header.dashboard .dashboard-profile-pic {
+  position: relative;
+  bottom: 20px;
 }
 
 header.dashboard .navigation {
@@ -2345,6 +2383,13 @@ header.dashboard #nav-toggle.active span:after {
   padding-top: 125px;
   background-color: #F9FDFF;
   margin-bottom: 4em;
+  font-family: "Avenir Light" !important;
+}
+
+.profile-container h2 {
+  font-family: "Avenir Black";
+  padding: 2em 0;
+  color: #1E3D77;
 }
 
 .profile-container .profile-form {
@@ -2363,13 +2408,28 @@ header.dashboard #nav-toggle.active span:after {
 
 .profile-container .profile-form div.edit button {
   float: right;
-  padding: 1em;
-  border-radius: 15px;
+  padding: 1em 2.5em;
+  border-radius: 25px;
+  border: 1px solid #707070;
 }
 
 .profile-container .profile-form .salutation {
+  padding-top: 2em;
   padding-bottom: 2em;
   border-bottom: 2px solid black;
+}
+
+.profile-container .profile-form .salutation span {
+  font-size: 22px;
+  display: inline-block;
+  padding-left: 1em;
+  font-weight: 700;
+}
+
+.profile-container .profile-form .save-profile button {
+  padding: 1em 2.5em;
+  border-radius: 25px;
+  border: 1px solid #707070;
 }
 
 .profile-container .profile-form .form-inline {
@@ -2400,7 +2460,7 @@ header.dashboard #nav-toggle.active span:after {
 
 .profile-container .profile-form .form-inline select {
   width: 100%;
-  padding: 1em;
+  padding: 1.3em;
   border-radius: 30px;
 }
 

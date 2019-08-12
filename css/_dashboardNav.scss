@@ -3,6 +3,11 @@ header.dashboard{
     position: fixed;
     width: 100%;
     z-index: 99999;
+
+    .dashboard-profile-pic{
+      position: relative;
+      bottom: 20px;
+    }
   
     @media screen and (max-width:$breakpoint) {
      

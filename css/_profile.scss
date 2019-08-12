@@ -2,6 +2,14 @@
     padding-top: 125px;
     background-color: #F9FDFF;
     margin-bottom: 4em;
+    font-family: $avenir-light !important;
+
+    h2{
+        font-family: $avenir-black;
+        padding: 2em 0;
+        color: $heading-blue;
+        // 
+    }
 
     .profile-form{
         padding: 3em;
@@ -15,13 +23,28 @@
             
             button{
                 float: right;
-                padding: 1em;
-                border-radius: 15px;
+                padding: 1em 2.5em;
+                border-radius: 25px;
+                border: 1px solid #707070;
             }
         }
         .salutation{
+            padding-top: 2em;
             padding-bottom: 2em;
             border-bottom: 2px solid black;
+            span{
+                font-size: 22px;
+                display: inline-block;
+                padding-left: 1em;
+                font-weight: 700;
+            }
+        }
+        .save-profile{
+            button{
+                padding: 1em 2.5em;
+                border-radius: 25px;
+                border: 1px solid #707070;
+            }
         }
         .form-inline{
             display: inline-block;
@@ -46,7 +69,7 @@
 
             select{
                 width: 100%;
-                padding: 1em;
+                padding: 1.3em;
                 border-radius: 30px;
             }
 

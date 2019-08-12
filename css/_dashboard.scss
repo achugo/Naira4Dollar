@@ -5,7 +5,7 @@
     box-shadow: 0 2px 22px rgba(0, 0, 0, 0.13);
 
     .row{
-        padding: 0 3em 2em 0;
+        padding: 1em 3em 2em 0;
         position: relative;
         bottom: 48px;
         h3{
@@ -39,6 +39,7 @@
         z-index:9999;
         padding: 2rem 1rem 0rem 0rem;
         border-radius: 30px;
+        font-family: $avenir-light !important;
 
         @media screen and (max-width:768px) {
             padding: 2rem 1rem 3rem 0rem;
@@ -127,8 +128,14 @@
         color: white;
         background-color: $twitter-blue;
         position: absolute;
-        top: 300px;
-        left: 115px;
+        top: 400px;
+        left: 215px;
+        border-radius: 15px;
+
+        @media screen and (min-width:768px) {
+            top: 310px;
+            left: 165px;
+        }
     
     }
     .row{
@@ -224,4 +231,21 @@
         }
     }
     
+}
+
+.col-md-9{
+    .table-responsive{
+        thead{
+            font-family: $avenir-light;
+            color: white;
+            background-color: black;
+        }
+        tbody{
+            font-family: $avenir-roman;
+        }
+        td{
+            border-top: 7px solid #ddd;
+            border-right: 1px solid #ddd
+        }
+    }
 }
