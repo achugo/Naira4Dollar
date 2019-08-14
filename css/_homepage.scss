@@ -649,6 +649,13 @@
       
     }
   }
+  .tweet-side{
+    .img-two{
+      @media screen {
+        padding-bottom: 10em;
+      }
+    }
+  }
 
   footer{
     background-color: $heading-blue;

@@ -1422,6 +1422,12 @@ nav ul li ul li a {
   width: 100% !important;
 }
 
+@media screen {
+  .tweet-side .img-two {
+    padding-bottom: 10em;
+  }
+}
+
 footer {
   background-color: #1E3D77;
   color: #ffffff;
