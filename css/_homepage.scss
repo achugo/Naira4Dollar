@@ -56,10 +56,10 @@
       @media  (min-width:1400px) and (max-width:1501px) {
         left: 13.2% !important;
       }
-      @media (max-width:1689px) and (min-width:1502px) {
+      @media (max-width:1679px) and (min-width:1502px) {
         left:13.2% !important;
       }
-      @media (max-width:1802px) and (min-width:1690px) {
+      @media (max-width:1802px) and (min-width:1679px) {
         left:17.2% !important;
       }
       @media (max-width:2026px) and (min-width:1802px) {
@@ -219,6 +219,10 @@
 
   .payment-images{
 
+    .owl-dots{
+      position: relative;
+      bottom: 25px;
+    }
     .row{
       // width:100%;
       text-align: center;

@@ -322,6 +322,13 @@ header .top-nav .float-right img:nth-child(3) {
   padding: 5px 0 5px 5px;
 }
 
+@media screen and (max-width: 600px) {
+  header .top-nav .float-right img {
+    width: 75%;
+    padding: 5px 3px !important;
+  }
+}
+
 header .top-nav a {
   text-decoration: none;
   color: #ffffff;
@@ -342,6 +349,12 @@ header .top-nav a {
   header .top-nav a {
     font-size: 7px;
     padding-left: 1px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .top-nav a {
+    padding-right: 10px;
   }
 }
 
@@ -770,13 +783,13 @@ nav ul li ul li a {
   }
 }
 
-@media (max-width: 1689px) and (min-width: 1502px) {
+@media (max-width: 1679px) and (min-width: 1502px) {
   .carousel-wrapper .carousel-caption {
     left: 13.2% !important;
   }
 }
 
-@media (max-width: 1802px) and (min-width: 1690px) {
+@media (max-width: 1802px) and (min-width: 1679px) {
   .carousel-wrapper .carousel-caption {
     left: 17.2% !important;
   }
@@ -976,6 +989,11 @@ nav ul li ul li a {
   .weird-ellipse .ellipse-two {
     left: 1880px;
   }
+}
+
+.payment-images .owl-dots {
+  position: relative;
+  bottom: 25px;
 }
 
 .payment-images .row {

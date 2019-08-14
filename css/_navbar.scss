@@ -36,6 +36,11 @@ header{
           width: 85%;
           padding: 5px 0 5px 5px;
         }
+
+        @media screen and (max-width:600px){
+          width:75%;
+          padding:5px 3px !important;
+        }
       }
     }
 
@@ -55,6 +60,9 @@ header{
       @media screen and (max-width:600px) {
         font-size:7px;
         padding-left: 1px;
+      }
+      @media screen and (min-width:1200px) {
+        padding-right:10px;
       }
       img{
         padding-left: 8px;
