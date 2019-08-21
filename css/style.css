@@ -1429,6 +1429,12 @@ nav ul li ul li a {
   width: 100% !important;
 }
 
+@media screen and (max-width: 500px) {
+  .tweet-tweet iframe {
+    max-width: 390px !important;
+  }
+}
+
 @media screen {
   .tweet-side .img-two {
     padding-bottom: 10em;
