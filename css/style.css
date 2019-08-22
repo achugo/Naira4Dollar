@@ -308,16 +308,24 @@ header .top-nav {
   padding-top: 7px;
 }
 
+header .top-nav .col-8 {
+  position: relative;
+  width: 64% !important;
+  max-width: 64%;
+}
+
+@media screen and (max-width: 500px) {
+  header .top-nav .col-4 {
+    width: 31% !important;
+    max-width: 32%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   header .top-nav .padding-lr0 {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-}
-
-header .top-nav .float-right {
-  position: absolute;
-  right: 0px !important;
 }
 
 header .top-nav .float-right img {

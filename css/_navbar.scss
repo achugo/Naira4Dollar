@@ -23,6 +23,19 @@ header{
     height: 37px;
     padding-top: 7px;
 
+    .col-8{
+      position: relative;
+      width: 64% !important;
+      max-width: 64%;
+    }
+
+    .col-4{
+      @media screen and (max-width:500px) {
+        width: 31% !important;
+        max-width: 32%;;
+      }
+    }
+
     .padding-lr0{
       @media screen and (max-width:600px){
         padding-left:0px !important;
@@ -31,8 +44,8 @@ header{
     }
     
     .float-right{
-      position: absolute;
-      right: 0px !important;
+      // position: absolute;
+      // right: 0px !important;
 
       img{
         width: 85%;
