@@ -643,11 +643,13 @@
   }
 
   .tweet-tweet{
+    width: 99.9% !important;
+    
     iframe{
-      width: 100% !important;
+      width: inherit !important;
 
       @media screen and (max-width:500px) {
-        max-width: 390px !important
+        max-width: 390px !important;
       }
      
       

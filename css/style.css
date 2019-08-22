@@ -1449,8 +1449,12 @@ nav ul li ul li a {
   outline: none;
 }
 
+.tweet-tweet {
+  width: 99.9% !important;
+}
+
 .tweet-tweet iframe {
-  width: 100% !important;
+  width: inherit !important;
 }
 
 @media screen and (max-width: 500px) {
