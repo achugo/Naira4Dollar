@@ -305,6 +305,7 @@ header .top-nav {
   font-family: "Avenir Roman" !important;
   position: relative;
   height: 37px;
+  padding-top: 7px;
 }
 
 @media screen and (max-width: 600px) {
@@ -314,9 +315,14 @@ header .top-nav {
   }
 }
 
+header .top-nav .float-right {
+  position: absolute;
+  right: 0px !important;
+}
+
 header .top-nav .float-right img {
   width: 85%;
-  padding: 5px;
+  padding: 0px 5px;
 }
 
 header .top-nav .float-right img:nth-child(2) {
@@ -344,6 +350,10 @@ header .top-nav a {
   display: inline-block;
   padding-top: 4px;
   font-size: 12px;
+}
+
+header .top-nav a:nth-child(3) {
+  padding-right: 0px !important;
 }
 
 @media screen and (max-width: 500px) {
