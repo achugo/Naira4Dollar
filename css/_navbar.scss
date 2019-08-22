@@ -23,6 +23,10 @@ header{
     height: 37px;
     padding-top: 7px;
 
+    @media screen and (max-width:600px) {
+      padding-top:10px;
+    }
+
     .col-8{
       position: relative;
       width: 64% !important;

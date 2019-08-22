@@ -308,6 +308,12 @@ header .top-nav {
   padding-top: 7px;
 }
 
+@media screen and (max-width: 600px) {
+  header .top-nav {
+    padding-top: 10px;
+  }
+}
+
 header .top-nav .col-8 {
   position: relative;
   width: 64% !important;
